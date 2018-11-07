@@ -1,0 +1,53 @@
+.close {
+    -fx-background-image: url(../images/close.png);
+    -fx-background-size: 15px 15px;
+    -fx-background-color: transparent;
+    -fx-alignment: center;
+    -fx-max-height: 15px;
+    -fx-max-width: 15px;
+    -fx-background-repeat: no-repeat;
+}
+
+.close:hover {
+    -fx-background-image: url(../images/close-hover.png);
+}
+
+.close:pressed {
+    -fx-background-image: url(../images/close-pressed.png);
+}
+
+.minimize {
+    -fx-background-image: url(../images/minimize.png);
+    -fx-background-size: 15px 15px;
+    -fx-background-color: transparent;
+    -fx-alignment: center;
+    -fx-max-height: 15px;
+    -fx-max-width: 15px;
+    -fx-background-repeat: no-repeat;
+}
+
+.minimize:hover {
+    -fx-background-image: url(../images/minimize-hover.png);
+}
+
+.minimize:pressed {
+    -fx-background-image: url(../images/minimize-pressed.png);
+}
+
+.maximize {
+    -fx-background-image: url(../images/maximize.png);
+    -fx-background-size: 15px 15px;
+    -fx-background-color: transparent;
+    -fx-alignment: center;
+    -fx-max-height: 15px;
+    -fx-max-width: 15px;
+    -fx-background-repeat: no-repeat;
+}
+
+.maximize:hover {
+    -fx-background-image: url(../images/maximize-hover.png);
+}
+
+.maximize:pressed {
+    -fx-background-image: url(../images/maximize-pressed.png);
+}
