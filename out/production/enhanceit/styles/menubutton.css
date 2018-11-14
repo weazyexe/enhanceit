@@ -1,13 +1,15 @@
 .button {
     -fx-max-width: 200;
-    -fx-max-height: 120;
+    -fx-max-height: infinity;
     -fx-min-height: 70;
+    -fx-alignment: left;
     -fx-background-color: #333;
     -fx-background-radius: 0;
     -fx-font-size: 16;
     -fx-font-family: Roboto;
     -fx-font-style: bold;
     -fx-text-fill: #fff;
+    -fx-padding: 0 0 0 30;
 }
 
 .button:hover {
