@@ -1,24 +1,21 @@
 package enhanceit;
 
 import javafx.embed.swing.SwingFXUtils;
-import javafx.embed.swing.SwingNode;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.image.WritableImage;
 import javafx.scene.layout.BorderPane;
-import marvin.gui.MarvinImagePanel;
 import marvin.image.MarvinImage;
 import marvin.io.MarvinImageIO;
+import org.marvinproject.image.restoration.noiseReduction.NoiseReduction;
 
-import javax.swing.*;
 import java.awt.image.BufferedImage;
-import java.io.FileInputStream;
-import java.io.IOException;
 
 public class Controller {
+
+    MarvinImage mImage;
+    BufferedImage bImage;
 
     @FXML
     ImageView imgView;
@@ -33,12 +30,12 @@ public class Controller {
     public void openImage() {
 
         Image img;
-        MarvinImage mImage = MarvinImageIO.loadImage("C:\\Users\\weazy\\Desktop\\beauty11.jpg");
+        mImage = MarvinImageIO.loadImage("/home/weazy/Yandex.Disk/graphix/all works/avatars/beauty11.jpg");
 //        BufferedImage bimg = mImage.getBufferedImage();
 //        mImage.update();
 //        mImage.updateColorArray();
-        BufferedImage bimg = mImage.getBufferedImageNoAlpha();
-        img = SwingFXUtils.toFXImage(bimg, null);
+        bImage = mImage.getBufferedImageNoAlpha();
+        img = SwingFXUtils.toFXImage(bImage, null);
         imgView.setImage(img);
     }
 
@@ -47,5 +44,15 @@ public class Controller {
         System.exit(0);
     }
 
+
+    @FXML
+    public void denoise() {
+        NoiseReduction denoiser = new NoiseReduction();
+        MarvinImage denoised = new MarvinImage(bImage);
+        denoiser.load();
+        denoiser.process(mImage, denoised);
+        bImage = denoised.getBufferedImageNoAlpha();
+        imgView.setImage(SwingFXUtils.toFXImage(bImage, null));
+    }
 
 }
