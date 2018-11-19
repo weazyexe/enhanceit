@@ -155,6 +155,41 @@
       <usages-collector id="statistics.spring.boot.run.usages" />
       <usages-collector id="statistics.spring.boot.mvc.usages" />
     </session>
+    <session id="1958988247">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="373" />
+          <entry key="java" value="60" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="373" />
+          <entry key="JAVA" value="60" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="5" />
+          <entry key="fxml" value="1" />
+          <entry key="java" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="5" />
+          <entry key="JAVA" value="1" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="JavaFxApplication" />
@@ -164,7 +199,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/enhanceit/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="246">
               <caret line="35" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -174,46 +209,31 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/enhanceit/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="50" column="53" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
+            <state relative-caret-position="437">
+              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1163#1164#0" expanded="true" />
-                <element signature="e#1193#1194#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MarvinProject/MarvinPlugins/src/org/marvinproject/image/restoration/noiseReduction/NoiseReduction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="117" selection-start-line="117" selection-end-line="117" />
-            </state>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/enhanceit/mainstage.fxml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="-137" />
           </provider>
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MarvinProject/MarvinFramework/src/marvin/performance/MarvinPerformanceMeter.java">
+        <entry file="file://$PROJECT_DIR$/src/styles/button.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="186" selection-start-line="186" selection-end-line="186" />
-              <folding>
-                <element signature="e#4180#4181#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MarvinProject/MarvinFramework/src/marvin/plugin/MarvinAbstractImagePlugin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="77" selection-start-line="77" selection-end-line="77" />
+            <state relative-caret-position="57">
+              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -242,9 +262,11 @@
         <option value="$PROJECT_DIR$/src/styles/topbar.css" />
         <option value="$PROJECT_DIR$/src/enhanceit/Main.java" />
         <option value="$PROJECT_DIR$/src/styles/menubutton.css" />
+        <option value="$PROJECT_DIR$/src/enhanceit/Controller.java" />
+        <option value="$PROJECT_DIR$/src/styles/leftmenu.css" />
         <option value="$PROJECT_DIR$/src/styles/menu.css" />
         <option value="$PROJECT_DIR$/src/enhanceit/mainstage.fxml" />
-        <option value="$PROJECT_DIR$/src/enhanceit/Controller.java" />
+        <option value="$PROJECT_DIR$/src/styles/button.css" />
       </list>
     </option>
   </component>
@@ -272,7 +294,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -304,19 +326,13 @@
             </path>
             <path>
               <item name="enhanceit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="enhanceit" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="enhanceit" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -329,9 +345,9 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542548492668" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542650359415" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/MarvinProject/MarvinFramework/marvin/plugins/image" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -449,17 +465,18 @@
       <workItem from="1542206546916" duration="3034000" />
       <workItem from="1542220514683" duration="54000" />
       <workItem from="1542543188821" duration="5460000" />
+      <workItem from="1542646952839" duration="3217000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45464000" />
+    <option name="totallyTimeSpent" value="48681000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="26" width="1920" height="1053" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.18676628" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.18869936" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -468,8 +485,8 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.21908894" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18642241" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.26939654" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.18546638" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.26898047" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -505,16 +522,6 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/MarvinProject/MarvinPlugins/src/org/marvinproject/image/restoration/noiseReduction/NoiseReduction.java</url>
-          <line>115</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="mImage.getBufferedImage()" language="JAVA" />
@@ -547,13 +554,6 @@
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.base/javafx/event/Event.java" />
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.graphics/javafx/scene/Scene.java" />
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.base/javafx/event/EventHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/styles/topbar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/menubutton.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -561,36 +561,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/menu.css">
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.2/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java" />
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.2/lib/src.zip!/javafx.graphics/javafx/stage/Window.java" />
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.2/lib/src.zip!/javafx.base/javafx/beans/property/BooleanPropertyBase.java" />
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.2/lib/src.zip!/javafx.base/javafx/beans/property/ReadOnlyBooleanWrapper.java" />
+    <entry file="file://$PROJECT_DIR$/MarvinProject/MarvinFramework/src/marvin/image/MarvinImage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/enhanceit/mainstage.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="35" column="61" selection-start-line="35" selection-start-column="61" selection-end-line="35" selection-end-column="61" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/enhanceit/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#createSwingContent#0;class#Main#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MarvinProject/MarvinFramework/src/marvin/plugin/MarvinAbstractImagePlugin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        <state relative-caret-position="177">
+          <caret line="370" selection-start-line="370" selection-end-line="370" />
         </state>
       </provider>
     </entry>
@@ -604,75 +582,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MarvinProject/MarvinFramework/src/marvin/plugin/MarvinAbstractImagePlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/topbar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/MarvinProject/MarvinPlugins/src/org/marvinproject/image/restoration/noiseReduction/NoiseReduction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="117" selection-start-line="117" selection-end-line="117" />
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.2/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java">
+    <entry file="file://$PROJECT_DIR$/src/styles/material-fx-v0_3.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="1786" selection-start-line="1786" selection-end-line="1786" />
-        </state>
+        <state relative-caret-position="-171" />
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.2/lib/src.zip!/javafx.graphics/javafx/stage/Window.java">
+    <entry file="file://$PROJECT_DIR$/src/enhanceit/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="672" selection-start-line="672" selection-end-line="672" />
+        <state relative-caret-position="246">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
-            <element signature="e#5076#5077#0" expanded="true" />
-            <element signature="e#5148#5149#0" expanded="true" />
-            <element signature="e#25000#25001#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#createSwingContent#0;class#Main#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.2/lib/src.zip!/javafx.base/javafx/beans/property/BooleanPropertyBase.java">
+    <entry file="file://$PROJECT_DIR$/src/styles/leftmenu.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="104" selection-start-line="104" selection-end-line="104" />
-          <folding>
-            <element signature="e#2708#2709#0" expanded="true" />
-            <element signature="e#3955#3956#0" expanded="true" />
-            <element signature="e#3996#3997#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.2/lib/src.zip!/javafx.base/javafx/beans/property/ReadOnlyBooleanWrapper.java">
+    <entry file="file://$PROJECT_DIR$/src/styles/menu.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="102" selection-start-line="102" selection-end-line="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MarvinProject/MarvinFramework/src/marvin/image/MarvinImage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="370" selection-start-line="370" selection-end-line="370" />
-          <folding>
-            <element signature="e#7778#7779#0" expanded="true" />
-            <element signature="e#7830#7831#0" expanded="true" />
-            <element signature="e#8858#8859#0" expanded="true" />
-            <element signature="e#8877#8878#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="171">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/enhanceit/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="50" column="53" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
+        <state relative-caret-position="437">
+          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1163#1164#0" expanded="true" />
-            <element signature="e#1193#1194#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/button.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/enhanceit/mainstage.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-137" />
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
   </component>
   <component name="masterDetails">

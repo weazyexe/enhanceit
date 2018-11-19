@@ -24,13 +24,11 @@ public class Controller {
     Button autoButton;
 
     @FXML
-    BorderPane borderPane;
-
-    @FXML
     public void openImage() {
 
         Image img;
-        mImage = MarvinImageIO.loadImage("/home/weazy/Yandex.Disk/graphix/all works/avatars/beauty11.jpg");
+        //mImage = MarvinImageIO.loadImage("/home/weazy/Yandex.Disk/graphix/all works/avatars/beauty11.jpg");
+        mImage = MarvinImageIO.loadImage("C:\\Users\\weazy\\Desktop\\beauty11.jpg");
 //        BufferedImage bimg = mImage.getBufferedImage();
 //        mImage.update();
 //        mImage.updateColorArray();
