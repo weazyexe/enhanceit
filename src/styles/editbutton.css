@@ -1,0 +1,77 @@
+.noise {
+    -fx-background-image: url(../images/noise.png);
+    -fx-background-size: 50px 50px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-background-position: center;
+    -fx-background-radius: 0px;
+}
+
+.color {
+    -fx-background-image: url(../images/gamma.png);
+    -fx-background-size: 50px 50px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-background-position: center;
+    -fx-background-radius: 0px;
+}
+
+.bw {
+    -fx-background-image: url(../images/bw.png);
+    -fx-background-size: 50px 50px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-background-position: center;
+    -fx-background-radius: 0px;
+}
+
+.sharpness {
+    -fx-background-image: url(../images/sharpness.png);
+    -fx-background-size: 50px 50px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-background-position: center;
+    -fx-background-radius: 0px;
+}
+
+.auto {
+    -fx-background-image: url(../images/auto.png);
+    -fx-background-size: 50px 50px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-background-position: center;
+    -fx-background-radius: 0px;
+}
+
+.save {
+    -fx-background-image: url(../images/save.png);
+    -fx-background-size: 50px 50px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-background-position: center;
+    -fx-background-radius: 0px;
+}
+
+.noise:hover {
+    -fx-background-color: #222;
+}
+
+.color:hover {
+    -fx-background-color: #222;
+}
+
+.bw:hover {
+    -fx-background-color: #222;
+}
+
+.sharpness:hover {
+    -fx-background-color: #222;
+}
+
+.auto:hover {
+    -fx-background-color: #222;
+}
+
+.save:hover {
+    -fx-background-color: #222;
+}
