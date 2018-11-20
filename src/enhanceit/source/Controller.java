@@ -27,19 +27,14 @@ public class Controller {
     @FXML
     public void openImage() {
         try {
+            // choose image to edit
             File file = fileChooser.showOpenDialog(loadImageButton.getScene().getWindow());
 
+            // image as singleton
             EditedImage.initializeImage(file.getPath());
 
-            Parent root = FXMLLoader.load(getClass().getResource("../scenes/editor.fxml"));
-            Scene scene = new Scene(root, 709, 578);
-
-            Stage stage = (Stage)loadImageButton.getScene().getWindow();
-            stage.setScene(scene);
-        }
-        catch (IOException e) {
-            Alert alert = new Alert(Alert.AlertType.ERROR, e.getMessage(), ButtonType.OK);
-            alert.showAndWait();
+            // show editor form
+            GUI.showEditorScene(loadImageButton);
         }
         catch (Exception e) {
             Alert alert = new Alert(Alert.AlertType.ERROR, e.getMessage(), ButtonType.OK);

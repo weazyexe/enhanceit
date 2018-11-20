@@ -1,9 +1,13 @@
 package enhanceit.source
 
 import javafx.embed.swing.SwingFXUtils
+import javafx.fxml.FXMLLoader
+import javafx.scene.Parent
+import javafx.scene.Scene
 import javafx.scene.control.Button
 import javafx.scene.control.Slider
 import javafx.scene.image.ImageView
+import javafx.stage.Stage
 import marvin.image.MarvinImage
 
 class GUI {
@@ -40,5 +44,13 @@ class GUI {
             imageView.image = SwingFXUtils.toFXImage(img.bufferedImageNoAlpha, null)
         }
 
+        @JvmStatic
+        fun showEditorScene(button: Button) {
+            val root = FXMLLoader.load<Parent>(javaClass.getResource("../scenes/editor.fxml"))
+            val scene = Scene(root, 709.0, 578.0)
+
+            val stage = button.scene.window as Stage
+            stage.scene = scene
+        }
     }
 }
