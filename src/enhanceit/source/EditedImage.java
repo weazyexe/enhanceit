@@ -35,4 +35,8 @@ public class EditedImage {
     public static synchronized void setImage(MarvinImage mImage) {
         MarvinImage.copyColorArray(mImage, marvinImage);
     }
+
+    public static synchronized MarvinImage copy() {
+        return new MarvinImage(marvinImage.getBufferedImageNoAlpha());
+    }
 }

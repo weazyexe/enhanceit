@@ -1,15 +1,11 @@
 package enhanceit.source;
 
-import javafx.embed.swing.SwingFXUtils;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
-import javafx.scene.control.ButtonType;
 import javafx.scene.control.Slider;
 import javafx.scene.image.ImageView;
 import marvin.image.MarvinImage;
 import org.marvinproject.image.restoration.noiseReduction.NoiseReduction;
-import org.marvinproject.image.color.brightnessAndContrast.BrightnessAndContrast;
 
 
 public class EditorController {
@@ -34,18 +30,19 @@ public class EditorController {
         GUI.sliderB = sliderB;
         GUI.applyButton = applyButton;
         GUI.imageView = imgView;
+
         GUI.disableSliders();
         GUI.setImage();
     }
 
     public void removeNoise() {
-        NoiseReduction denoiser = new NoiseReduction(); // denoiser
-        MarvinImage denoised = new MarvinImage(EditedImage.getBufferedImage()); // create new image
+        NoiseReduction noiseReduction = new NoiseReduction();
+        MarvinImage withoutNoiseImage = new MarvinImage(EditedImage.getBufferedImage()); // create new image
 
-        denoiser.load();
-        denoiser.process(EditedImage.getMarvinImage(), denoised);   // processing, saving to new image
+        noiseReduction.load();
+        noiseReduction.process(EditedImage.getMarvinImage(), withoutNoiseImage);   // processing, saving to new image
 
-        EditedImage.setImage(denoised);     // assigning
+        EditedImage.setImage(withoutNoiseImage);     // assigning
 
         GUI.setImage();
     }
@@ -59,7 +56,7 @@ public class EditorController {
                 int g = edited.getIntComponent1(y, x);
                 int b = edited.getIntComponent2(y, x);
 
-                int mid = (int)((r + g + b) / 3);
+                int mid = (r + g + b) / 3;
                 edited.setIntColor(y, x, edited.getAlphaComponent(y, x), mid, mid, mid);
             }
         }
@@ -70,7 +67,7 @@ public class EditorController {
 
     public void colorFilter() {
 
-        edited = new MarvinImage(EditedImage.getBufferedImage());
+        edited = EditedImage.copy();
 
         for (int y = 0; y < edited.getHeight(); y++) {
             for (int x = 0; x < edited.getWidth(); x++) {
@@ -124,6 +121,6 @@ public class EditorController {
     public void colorFilterBegin() {
         GUI.enableSliders();
 
-        edited = new MarvinImage(EditedImage.getBufferedImage());
+        edited = EditedImage.copy();
     }
 }
