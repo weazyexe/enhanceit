@@ -27,21 +27,15 @@ public class EditorController {
     private static MarvinImage edited;
     private static int actions = 0;
 
-    private void setImage() {
-        imgView.setImage(SwingFXUtils.toFXImage(EditedImage.getBufferedImage(), null));
-    }
-
-    private void setImage(MarvinImage img) {
-        imgView.setImage(SwingFXUtils.toFXImage(img.getBufferedImageNoAlpha(), null));
-    }
-
     @FXML
     public void initialize() {
-        setImage();
-        sliderR.setVisible(false);
-        sliderG.setVisible(false);
-        sliderB.setVisible(false);
-        applyButton.setVisible(false);
+        GUI.sliderR = sliderR;
+        GUI.sliderG = sliderG;
+        GUI.sliderB = sliderB;
+        GUI.applyButton = applyButton;
+        GUI.imageView = imgView;
+        GUI.disableSliders();
+        GUI.setImage();
     }
 
     public void removeNoise() {
@@ -53,7 +47,7 @@ public class EditorController {
 
         EditedImage.setImage(denoised);     // assigning
 
-        setImage();
+        GUI.setImage();
     }
 
     public void blackAndWhite() {
@@ -71,7 +65,7 @@ public class EditorController {
         }
 
         EditedImage.setImage(edited);
-        setImage();
+        GUI.setImage();
     }
 
     public void colorFilter() {
@@ -100,13 +94,11 @@ public class EditorController {
             }
         }
 
-        setImage(edited);
+        GUI.setImage(edited);
     }
 
     public void sharpness() {
-        sliderR.setVisible(false);
-        sliderG.setVisible(true);
-        sliderB.setVisible(false);
+
     }
 
     public void updateDeltaR() {
@@ -126,17 +118,11 @@ public class EditorController {
 
     public void apply() {
         EditedImage.setImage(edited);
-        sliderR.setVisible(false);
-        sliderG.setVisible(false);
-        sliderB.setVisible(false);
-        applyButton.setVisible(false);
+        GUI.disableSliders();
     }
 
     public void colorFilterBegin() {
-        sliderR.setVisible(true);
-        sliderG.setVisible(true);
-        sliderB.setVisible(true);
-        applyButton.setVisible(true);
+        GUI.enableSliders();
 
         edited = new MarvinImage(EditedImage.getBufferedImage());
     }
