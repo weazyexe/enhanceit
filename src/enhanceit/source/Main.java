@@ -14,9 +14,11 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("../scenes/welcome.fxml"));
 
         Scene scene = new Scene(root, 709, 496);
+        primaryStage.setMaxWidth(709);
+        primaryStage.setMaxHeight(496);
         primaryStage.setMinWidth(709);
         primaryStage.setMinHeight(496);
-        primaryStage.setTitle("Enhance it - photo enhancer");
+        primaryStage.setTitle(System.getProperty("os.name"));
         primaryStage.setScene(scene);
         primaryStage.show();
 

@@ -1,0 +1,8 @@
+.back {
+    -fx-background-image: url(../images/back.png);
+    -fx-background-position: center;
+    -fx-background-size: 30px 30px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+}

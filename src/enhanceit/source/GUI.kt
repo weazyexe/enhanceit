@@ -71,10 +71,14 @@ class GUI {
         @JvmStatic
         fun showEditorScene(button: Button) {
             val root = FXMLLoader.load<Parent>(javaClass.getResource("../scenes/editor.fxml"))
-            val scene = Scene(root, 709.0, 578.0)
+            val scene = Scene(root, 709.0, 636.0)
 
             val stage = button.scene.window as Stage
             stage.scene = scene
+            stage.minHeight = 709.0
+            stage.minWidth = 636.0
+            stage.maxHeight = Double.MAX_VALUE
+            stage.maxWidth = Double.MAX_VALUE
         }
     }
 }

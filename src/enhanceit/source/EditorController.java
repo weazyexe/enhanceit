@@ -5,9 +5,13 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
 import javafx.scene.image.ImageView;
+import javafx.stage.FileChooser;
 import marvin.image.MarvinImage;
+import marvin.io.MarvinImageIO;
 import org.marvinproject.image.color.brightnessAndContrast.BrightnessAndContrast;
 import org.marvinproject.image.restoration.noiseReduction.NoiseReduction;
+
+import java.io.File;
 
 
 public class EditorController {
@@ -159,5 +163,19 @@ public class EditorController {
         GUI.enableSlidersBC();
 
         edited = EditedImage.copy();
+    }
+
+    public void save() {
+        FileChooser fileChooser = new FileChooser();
+
+        FileChooser.ExtensionFilter pngExt = new FileChooser.ExtensionFilter("PNG pictures (*.png)", "*.png");
+        FileChooser.ExtensionFilter jpgExt = new FileChooser.ExtensionFilter("JPG/JPEG pictures (*.jpg)", "*.jpg", "*.jpeg");
+        FileChooser.ExtensionFilter bmpExt = new FileChooser.ExtensionFilter("BMP files (*.bmp)", "*.bmp");
+
+        fileChooser.getExtensionFilters().addAll(pngExt, jpgExt, bmpExt);
+
+        File file = fileChooser.showSaveDialog(applyRGBButton.getScene().getWindow());
+
+        MarvinImageIO.saveImage(EditedImage.getMarvinImage(), file.getPath());
     }
 }

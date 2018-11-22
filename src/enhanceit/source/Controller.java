@@ -28,6 +28,12 @@ public class Controller {
     public void openImage() {
         try {
             // choose image to edit
+            FileChooser.ExtensionFilter pngExt = new FileChooser.ExtensionFilter("PNG pictures (*.png)", "*.png");
+            FileChooser.ExtensionFilter jpgExt = new FileChooser.ExtensionFilter("JPG/JPEG pictures (*.jpg)", "*.jpg", "*.jpeg");
+            FileChooser.ExtensionFilter bmpExt = new FileChooser.ExtensionFilter("BMP files (*.bmp)", "*.bmp");
+
+            fileChooser.getExtensionFilters().addAll(pngExt, jpgExt, bmpExt);
+
             File file = fileChooser.showOpenDialog(loadImageButton.getScene().getWindow());
 
             // image as singleton
