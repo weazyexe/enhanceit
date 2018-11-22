@@ -2,9 +2,11 @@ package enhanceit.source;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
 import javafx.scene.image.ImageView;
 import marvin.image.MarvinImage;
+import org.marvinproject.image.color.brightnessAndContrast.BrightnessAndContrast;
 import org.marvinproject.image.restoration.noiseReduction.NoiseReduction;
 
 
@@ -17,21 +19,33 @@ public class EditorController {
     Slider sliderR, sliderG, sliderB;
 
     @FXML
-    Button applyButton;
+    Button applyRGBButton, applyBrightnessButton;
+
+    @FXML
+    Slider brightnessSlider, contrastSlider;
+
+    @FXML
+    Label brightnessLabel, contrastLabel;
 
     private static int deltaR, deltaG, deltaB;
     private static MarvinImage edited;
-    private static int actions = 0;
+    private static int deltaBrightness, deltaContrast;
 
     @FXML
     public void initialize() {
         GUI.sliderR = sliderR;
         GUI.sliderG = sliderG;
         GUI.sliderB = sliderB;
-        GUI.applyButton = applyButton;
+        GUI.applyRGBButton = applyRGBButton;
         GUI.imageView = imgView;
+        GUI.brightnessSlider = brightnessSlider;
+        GUI.contrastSlider = contrastSlider;
+        GUI.brightnessLabel = brightnessLabel;
+        GUI.contrastLabel = contrastLabel;
+        GUI.applyBrightnessButton = applyBrightnessButton;
 
-        GUI.disableSliders();
+        GUI.disableSlidersRGB();
+        GUI.disableSlidersBC();
         GUI.setImage();
     }
 
@@ -94,8 +108,20 @@ public class EditorController {
         GUI.setImage(edited);
     }
 
-    public void sharpness() {
+    public void brightnessAndContrast() {
+        deltaBrightness = (int)brightnessSlider.getValue();
+        deltaContrast = (int)contrastSlider.getValue();
 
+        BrightnessAndContrast bac = new BrightnessAndContrast();
+        edited = EditedImage.copy();
+
+        bac.load();
+        bac.setAttribute("brightness", deltaBrightness);
+        bac.setAttribute("contrast", deltaContrast);
+
+        bac.process(EditedImage.getMarvinImage(), edited);
+
+        GUI.setImage(edited);
     }
 
     public void updateDeltaR() {
@@ -113,13 +139,24 @@ public class EditorController {
         colorFilter();
     }
 
-    public void apply() {
+    public void applyRGB() {
         EditedImage.setImage(edited);
-        GUI.disableSliders();
+        GUI.disableSlidersRGB();
+    }
+
+    public void applyBC() {
+        EditedImage.setImage(edited);
+        GUI.disableSlidersBC();
     }
 
     public void colorFilterBegin() {
-        GUI.enableSliders();
+        GUI.enableSlidersRGB();
+
+        edited = EditedImage.copy();
+    }
+
+    public void brightnessAndContrastBegin() {
+        GUI.enableSlidersBC();
 
         edited = EditedImage.copy();
     }

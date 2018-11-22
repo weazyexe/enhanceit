@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
@@ -30,7 +31,7 @@
                   <Font size="15.0" />
                </font>
             </Button>
-            <Button alignment="BOTTOM_CENTER" minHeight="100.0" minWidth="120.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="120.0" styleClass="sharpness" stylesheets="@../../styles/editbutton.css" text="Sharpness" textAlignment="CENTER" textFill="WHITE">
+            <Button alignment="BOTTOM_CENTER" minHeight="100.0" minWidth="120.0" mnemonicParsing="false" onMouseClicked="#brightnessAndContrastBegin" prefHeight="100.0" prefWidth="120.0" styleClass="brightness" stylesheets="@../../styles/editbutton.css" text="Brightness" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
@@ -71,7 +72,32 @@
                      </HBox.margin>
                   </Slider>
                   <Slider fx:id="sliderB" min="-100.0" onMouseClicked="#updateDeltaB" styleClass="sliderB" stylesheets="@../../styles/slider.css" />
-                  <Button fx:id="applyButton" mnemonicParsing="false" onMouseClicked="#apply" stylesheets="@../../styles/button.css" text="APPLY">
+                  <Button fx:id="applyRGBButton" mnemonicParsing="false" onMouseClicked="#applyRGB" stylesheets="@../../styles/button.css" text="APPLY">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="116.0" prefWidth="709.0">
+               <children>
+                  <Label fx:id="brightnessLabel" text="Brightness" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin></Label>
+                  <Slider fx:id="brightnessSlider" max="127.0" min="-127.0" onMouseClicked="#brightnessAndContrast" styleClass="sliderG" stylesheets="@../../styles/slider.css" />
+                  <Label fx:id="contrastLabel" text="Contrast" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="30.0" right="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <Slider fx:id="contrastSlider" max="127.0" min="-127.0" onMouseClicked="#brightnessAndContrast" styleClass="sliderG" stylesheets="@../../styles/slider.css" />
+                  <Button fx:id="applyBrightnessButton" mnemonicParsing="false" onMouseClicked="#applyBC" stylesheets="@../../styles/button.css" text="APPLY">
                      <HBox.margin>
                         <Insets left="20.0" />
                      </HBox.margin>

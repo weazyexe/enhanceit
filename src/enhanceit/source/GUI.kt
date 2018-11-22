@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader
 import javafx.scene.Parent
 import javafx.scene.Scene
 import javafx.scene.control.Button
+import javafx.scene.control.Label
 import javafx.scene.control.Slider
 import javafx.scene.image.ImageView
 import javafx.stage.Stage
@@ -15,23 +16,46 @@ class GUI {
         lateinit var sliderR : Slider
         lateinit var sliderG : Slider
         lateinit var sliderB : Slider
-        lateinit var applyButton : Button
+        lateinit var applyRGBButton : Button
         lateinit var imageView : ImageView
+        lateinit var brightnessSlider: Slider
+        lateinit var contrastSlider: Slider
+        lateinit var brightnessLabel: Label
+        lateinit var contrastLabel: Label
+        lateinit var applyBrightnessButton: Button
 
         @JvmStatic
-        fun disableSliders() {
+        fun disableSlidersRGB() {
             sliderR.isVisible = false
             sliderG.isVisible = false
             sliderB.isVisible = false
-            applyButton.isVisible = false
+            applyRGBButton.isVisible = false
         }
 
         @JvmStatic
-        fun enableSliders() {
+        fun enableSlidersRGB() {
             sliderR.isVisible = true
             sliderG.isVisible = true
             sliderB.isVisible = true
-            applyButton.isVisible = true
+            applyRGBButton.isVisible = true
+        }
+
+        @JvmStatic
+        fun disableSlidersBC() {
+            brightnessSlider.isVisible = false
+            contrastSlider.isVisible = false
+            brightnessLabel.isVisible = false
+            contrastLabel.isVisible = false
+            applyBrightnessButton.isVisible = false
+        }
+
+        @JvmStatic
+        fun enableSlidersBC() {
+            brightnessSlider.isVisible = true
+            contrastSlider.isVisible = true
+            brightnessLabel.isVisible = true
+            contrastLabel.isVisible = true
+            applyBrightnessButton.isVisible = true
         }
 
         @JvmStatic

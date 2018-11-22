@@ -25,8 +25,8 @@
     -fx-background-radius: 0px;
 }
 
-.sharpness {
-    -fx-background-image: url(../images/sharpness.png);
+.brightness {
+    -fx-background-image: url(../images/brightness.png);
     -fx-background-size: 50px 50px;
     -fx-background-repeat: no-repeat;
     -fx-background-color: transparent;
@@ -64,7 +64,7 @@
     -fx-background-color: #222;
 }
 
-.sharpness:hover {
+.brightness:hover {
     -fx-background-color: #222;
 }
 
