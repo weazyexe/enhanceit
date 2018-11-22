@@ -37,7 +37,7 @@ public class Controller {
             GUI.showEditorScene(loadImageButton);
         }
         catch (Exception e) {
-            Alert alert = new Alert(Alert.AlertType.ERROR, e.getMessage(), ButtonType.OK);
+            Alert alert = new Alert(Alert.AlertType.ERROR, e.getClass().toString(), ButtonType.OK);
             alert.showAndWait();
         }
     }
