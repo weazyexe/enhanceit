@@ -68,7 +68,7 @@ public class EditorController {
         GUI.setImage();
         GUI.initializeTooltips();
 
-        stage = (Stage)autoButton.getScene().getWindow();
+        //stage = (Stage)autoButton.getScene().getWindow();
     }
 
     public void removeNoise() {
@@ -99,19 +99,6 @@ public class EditorController {
 
         EditedImage.setImage(edited);
         GUI.setImage();
-
-        ResizeHelper.addResizeListener((Stage)autoButton.getScene().getWindow());
-
-        final Delta dragDelta = new Delta();
-        stage.getScene().setOnMousePressed(mouseEvent -> {
-            dragDelta.setX(stage.getX() - mouseEvent.getScreenX());
-            dragDelta.setY(stage.getY() - mouseEvent.getScreenY());
-        });
-
-        stage.getScene().setOnMouseDragged(mouseEvent -> {
-            stage.setX(mouseEvent.getScreenX() + dragDelta.getX());
-            stage.setY(mouseEvent.getScreenY() + dragDelta.getY());
-        });
     }
 
     public void colorFilter() {
@@ -208,17 +195,5 @@ public class EditorController {
         File file = fileChooser.showSaveDialog(stage);
 
         MarvinImageIO.saveImage(EditedImage.getMarvinImage(), file.getPath());
-    }
-
-    public void close() {
-        GUI.close();
-    }
-
-    public void minimize() {
-        GUI.minimize(stage);
-    }
-
-    public void maximize() {
-        GUI.maximize(stage);
     }
 }

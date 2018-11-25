@@ -19,7 +19,7 @@ public class Main extends Application {
         primaryStage.setMaxHeight(496);
         primaryStage.setMinWidth(709);
         primaryStage.setMinHeight(496);
-        primaryStage.setTitle(System.getProperty("os.name"));
+        primaryStage.setTitle("Enhance it");
         primaryStage.setScene(scene);
         primaryStage.show();
 

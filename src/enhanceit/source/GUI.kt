@@ -90,11 +90,6 @@ class GUI {
         }
 
         @JvmStatic
-        fun close() {
-            System.exit(0);
-        }
-
-        @JvmStatic
         fun initializeTooltips() {
             var tooltip = Tooltip("Remove the noise")
             noiseButton.tooltip = tooltip
@@ -108,16 +103,6 @@ class GUI {
             autoButton.tooltip = tooltip
             tooltip = Tooltip("Save the image to...")
             saveButton.tooltip = tooltip
-        }
-
-        @JvmStatic
-        fun minimize(stage: Stage) {
-            stage.isIconified = true
-        }
-
-        @JvmStatic
-        fun maximize(stage: Stage) {
-            stage.isMaximized = !stage.isMaximized
         }
     }
 }
