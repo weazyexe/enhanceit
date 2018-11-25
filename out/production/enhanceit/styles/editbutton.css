@@ -1,55 +1,55 @@
 .noise {
     -fx-background-image: url(../images/noise.png);
-    -fx-background-size: 50px 50px;
+    -fx-background-size: 40px 40px;
     -fx-background-repeat: no-repeat;
     -fx-background-color: transparent;
     -fx-background-position: center;
-    -fx-background-radius: 0px;
+    -fx-background-radius: 100px;
 }
 
 .color {
     -fx-background-image: url(../images/gamma.png);
-    -fx-background-size: 50px 50px;
+    -fx-background-size: 40px 40px;
     -fx-background-repeat: no-repeat;
     -fx-background-color: transparent;
     -fx-background-position: center;
-    -fx-background-radius: 0px;
+    -fx-background-radius: 100px;
 }
 
 .bw {
     -fx-background-image: url(../images/bw.png);
-    -fx-background-size: 50px 50px;
+    -fx-background-size: 40px 40px;
     -fx-background-repeat: no-repeat;
     -fx-background-color: transparent;
     -fx-background-position: center;
-    -fx-background-radius: 0px;
+    -fx-background-radius: 100px;
 }
 
 .brightness {
     -fx-background-image: url(../images/brightness.png);
-    -fx-background-size: 50px 50px;
+    -fx-background-size: 40px 40px;
     -fx-background-repeat: no-repeat;
     -fx-background-color: transparent;
     -fx-background-position: center;
-    -fx-background-radius: 0px;
+    -fx-background-radius: 100px;
 }
 
 .auto {
     -fx-background-image: url(../images/auto.png);
-    -fx-background-size: 50px 50px;
+    -fx-background-size: 40px 40px;
     -fx-background-repeat: no-repeat;
     -fx-background-color: transparent;
     -fx-background-position: center;
-    -fx-background-radius: 0px;
+    -fx-background-radius: 100px;
 }
 
 .save {
     -fx-background-image: url(../images/save.png);
-    -fx-background-size: 50px 50px;
+    -fx-background-size: 40px 40px;
     -fx-background-repeat: no-repeat;
     -fx-background-color: transparent;
     -fx-background-position: center;
-    -fx-background-radius: 0px;
+    -fx-background-radius: 100px;
 }
 
 .noise:hover {

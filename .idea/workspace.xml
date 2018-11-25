@@ -2,12 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/marvin_1_5_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/marvin_1_5_5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/enhanceit/enhanceit/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/enhanceit/enhanceit/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/enhanceit/enhanceit/mainstage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/enhanceit/enhanceit/mainstage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enhanceit/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/enhanceit/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enhanceit/mainstage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/enhanceit/mainstage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/enhanceit/enhanceit/scenes/editor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/enhanceit/enhanceit/scenes/editor.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/enhanceit/enhanceit/source/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/enhanceit/enhanceit/source/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/enhanceit/enhanceit/source/EditorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/enhanceit/enhanceit/source/EditorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/enhanceit/enhanceit/source/GUI$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/enhanceit/enhanceit/source/GUI$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/enhanceit/enhanceit/source/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/enhanceit/enhanceit/source/GUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/enhanceit/images/auto.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/enhanceit/images/auto.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/enhanceit/images/back.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/enhanceit/images/back.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/enhanceit/images/brightness.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/enhanceit/images/brightness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/enhanceit/images/bw.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/enhanceit/images/bw.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/enhanceit/images/gamma.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/enhanceit/images/gamma.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/enhanceit/images/noise.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/enhanceit/images/noise.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/enhanceit/images/save.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/enhanceit/images/save.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/enhanceit/images/sharpness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/enhanceit/styles/editbutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/enhanceit/styles/editbutton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/enhanceit/styles/topbarbutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/enhanceit/styles/topbarbutton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/enhanceit/scenes/editor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/enhanceit/scenes/editor.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/enhanceit/source/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/enhanceit/source/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/enhanceit/source/EditorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/enhanceit/source/EditorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/enhanceit/source/GUI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/enhanceit/source/GUI.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/enhanceit/source/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/enhanceit/source/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/auto.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/auto.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/back.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/back.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/brightness.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/brightness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/bw.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/bw.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/gamma.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/gamma.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/noise.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/noise.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/save.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/save.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/sharpness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/editbutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/editbutton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/topbarbutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/topbarbutton.css" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -17,14 +42,6 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/enhanceit$Main.ic" NAME="Main Coverage Results" MODIFIED="1542706521739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>enhanceit.*</FILTER>
-    </SUITE>
-  </component>
-  <component name="CoverageViewManager">
-    <option name="myElementSize" value="203" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -67,163 +84,16 @@
     <ui_properties converted="true" />
     <breakpoint_rules converted="true" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-14539386">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="13" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.19" value="1" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.21" value="1" />
-          <entry key="project.open.time.23" value="2" />
-          <entry key="project.open.time.25" value="2" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.39" value="1" />
-          <entry key="project.opened" value="13" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="3" />
-          <entry key="css" value="2" />
-          <entry key="fxml" value="2" />
-          <entry key="java" value="7" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="3" />
-          <entry key="CSS" value="2" />
-          <entry key="JAVA" value="7" />
-          <entry key="XML" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="class" value="2" />
-          <entry key="css" value="606" />
-          <entry key="fxml" value="97" />
-          <entry key="java" value="1913" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="CLASS" value="2" />
-          <entry key="CSS" value="608" />
-          <entry key="JAVA" value="1911" />
-          <entry key="XML" value="97" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.spring.boot.mvc.usages" />
-      <usages-collector id="statistics.js.language.service.starts" />
-      <usages-collector id="statistics.vcs.git.usages" />
-      <usages-collector id="statistics.spring.boot.run.usages" />
-    </session>
-    <session id="-1142559113">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.62" value="1" />
-          <entry key="project.opened" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="css" value="239" />
-          <entry key="fxml" value="18" />
-          <entry key="java" value="385" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="CSS" value="239" />
-          <entry key="JAVA" value="385" />
-          <entry key="XML" value="18" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="css" value="2" />
-          <entry key="java" value="10" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CSS" value="2" />
-          <entry key="JAVA" value="10" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.vcs.git.usages" />
-      <usages-collector id="statistics.js.language.service.starts" />
-      <usages-collector id="statistics.spring.boot.run.usages" />
-      <usages-collector id="statistics.spring.boot.mvc.usages" />
-    </session>
-    <session id="1958988247">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="8" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="8" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="css" value="1182" />
-          <entry key="fxml" value="24" />
-          <entry key="java" value="4533" />
-          <entry key="kt" value="920" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="CSS" value="1182" />
-          <entry key="JAVA" value="4533" />
-          <entry key="Kotlin" value="920" />
-          <entry key="XML" value="24" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="css" value="11" />
-          <entry key="fxml" value="5" />
-          <entry key="java" value="17" />
-          <entry key="kt" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CSS" value="11" />
-          <entry key="JAVA" value="17" />
-          <entry key="Kotlin" value="1" />
-          <entry key="XML" value="5" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FavoritesManager">
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/enhanceit/source/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/styles/editbutton.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="52" column="1" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -231,49 +101,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/enhanceit/source/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="77" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="425">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/enhanceit/scenes/editor.fxml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="2090">
-              <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/enhanceit/scenes/welcome.fxml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="254" selection-start-line="9" selection-start-column="254" selection-end-line="9" selection-end-column="254" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/styles/root.css">
+        <entry file="file://$PROJECT_DIR$/src/enhanceit/source/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/styles/editbutton.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+            <state relative-caret-position="204">
+              <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -281,8 +119,36 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/topbarbutton.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+            <state relative-caret-position="794">
+              <caret line="58" column="70" selection-start-line="58" selection-start-column="70" selection-end-line="58" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/enhanceit/scenes/editor.fxml">
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+          <provider editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/enhanceit/source/ResizeHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1496">
+              <caret line="88" column="15" selection-start-line="88" selection-start-column="15" selection-end-line="88" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2394#2395#0" expanded="true" />
+                <element signature="e#2436#2437#0" expanded="true" />
+                <element signature="e#2488#2489#0" expanded="true" />
+                <element signature="e#2536#2537#0" expanded="true" />
+                <element signature="e#2588#2589#0" expanded="true" />
+                <element signature="e#2636#2637#0" expanded="true" />
+                <element signature="e#2690#2691#0" expanded="true" />
+                <element signature="e#2740#2741#0" expanded="true" />
+                <element signature="e#2794#2795#0" expanded="true" />
+                <element signature="e#2844#2845#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -290,13 +156,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/enhanceit/source/EditorController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="174" column="73" lean-forward="true" selection-start-line="174" selection-start-column="73" selection-end-line="174" selection-end-column="73" />
+            <state relative-caret-position="333">
+              <caret line="104" column="17" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#initialize#0;class#EditorController#0" />
                 <element signature="method#removeNoise#0;class#EditorController#0" />
-                <element signature="method#blackAndWhite#0;class#EditorController#0" />
                 <element signature="method#colorFilter#0;class#EditorController#0" />
                 <element signature="method#brightnessAndContrast#0;class#EditorController#0" />
                 <element signature="method#updateDeltaR#0;class#EditorController#0" />
@@ -306,32 +170,42 @@
                 <element signature="method#applyBC#0;class#EditorController#0" />
                 <element signature="method#colorFilterBegin#0;class#EditorController#0" />
                 <element signature="method#brightnessAndContrastBegin#0;class#EditorController#0" />
+                <element signature="method#save#0;class#EditorController#0" />
+                <element signature="e#5258#5259#0" expanded="true" />
+                <element signature="e#5285#5286#0" expanded="true" />
+                <element signature="e#5688#5689#0" expanded="true" />
+                <element signature="e#5718#5719#0" expanded="true" />
+                <element signature="e#5815#5816#0" expanded="true" />
+                <element signature="e#5845#5846#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/enhanceit/source/GUI.kt">
+        <entry file="file://$PROJECT_DIR$/src/enhanceit/source/Delta.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="75" column="52" lean-forward="true" selection-start-line="75" selection-start-column="52" selection-end-line="75" selection-end-column="52" />
+            <state relative-caret-position="323">
+              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="19" />
+              <folding>
+                <element signature="e#98#99#0" expanded="true" />
+                <element signature="e#122#123#0" expanded="true" />
+                <element signature="e#153#154#0" expanded="true" />
+                <element signature="e#179#180#0" expanded="true" />
+                <element signature="e#204#205#0" expanded="true" />
+                <element signature="e#228#229#0" expanded="true" />
+                <element signature="e#259#260#0" expanded="true" />
+                <element signature="e#285#286#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/enhanceit/source/EditedImage.java">
+        <entry file="file://$PROJECT_DIR$/src/enhanceit/source/GUI.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="39" column="70" selection-start-line="39" selection-start-column="70" selection-end-line="39" selection-end-column="70" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#EditedImage#0;class#EditedImage#0" />
-                <element signature="method#getMarvinImage#0;class#EditedImage#0" />
-                <element signature="method#getBufferedImage#0;class#EditedImage#0" />
-                <element signature="method#initializeImage#0;class#EditedImage#0" />
-              </folding>
+            <state relative-caret-position="570">
+              <caret line="127" column="9" selection-start-line="127" selection-start-column="9" selection-end-line="127" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -341,10 +215,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
+        <option value="CSS File" />
         <option value="Kotlin File" />
         <option value="Class" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -361,33 +234,23 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/styles/topbar.css" />
+        <option value="$PROJECT_DIR$/src/enhanceit/Main.java" />
         <option value="$PROJECT_DIR$/src/styles/menubutton.css" />
-        <option value="$PROJECT_DIR$/src/styles/leftmenu.css" />
         <option value="$PROJECT_DIR$/src/styles/menu.css" />
         <option value="$PROJECT_DIR$/src/enhanceit/mainstage.fxml" />
         <option value="$PROJECT_DIR$/src/enhanceit/Controller.java" />
-        <option value="$PROJECT_DIR$/src/enhanceit/Main.java" />
-        <option value="$PROJECT_DIR$/src/styles/button.css" />
-        <option value="$PROJECT_DIR$/src/styles/slider.css" />
-        <option value="$PROJECT_DIR$/src/enhanceit/source/GUI.java" />
-        <option value="$PROJECT_DIR$/src/enhanceit/source/EditedImage.java" />
         <option value="$PROJECT_DIR$/src/styles/editbutton.css" />
         <option value="$PROJECT_DIR$/src/enhanceit/source/Controller.java" />
-        <option value="$PROJECT_DIR$/src/enhanceit/source/EditorController.java" />
         <option value="$PROJECT_DIR$/src/styles/topbarbutton.css" />
         <option value="$PROJECT_DIR$/src/enhanceit/scenes/editor.fxml" />
-        <option value="$PROJECT_DIR$/src/styles/root.css" />
-        <option value="$PROJECT_DIR$/src/enhanceit/scenes/welcome.fxml" />
         <option value="$PROJECT_DIR$/src/enhanceit/source/Main.java" />
+        <option value="$PROJECT_DIR$/src/enhanceit/source/ResizeHelper.kt" />
+        <option value="$PROJECT_DIR$/src/enhanceit/source/ResizeHelper.java" />
         <option value="$PROJECT_DIR$/src/enhanceit/source/GUI.kt" />
+        <option value="$PROJECT_DIR$/src/enhanceit/source/EditorController.java" />
+        <option value="$PROJECT_DIR$/src/enhanceit/source/Delta.java" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
@@ -399,21 +262,28 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
-  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="enhanceit" type="b2602c69:ProjectViewProjectNode" />
               <item name="enhanceit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="enhanceit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="enhanceit" type="462c0819:PsiDirectoryNode" />
+              <item name="marvin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="enhanceit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="enhanceit" type="462c0819:PsiDirectoryNode" />
+              <item name="marvin" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="enhanceit" type="b2602c69:ProjectViewProjectNode" />
@@ -444,6 +314,12 @@
               <item name="enhanceit" type="b2602c69:ProjectViewProjectNode" />
               <item name="enhanceit" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="enhanceit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="enhanceit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -454,6 +330,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -467,19 +344,19 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542916996663" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543162681225" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/MarvinProject/MarvinFramework/marvin/plugins/image" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\repos\enhanceit\src\enhanceit\scenes" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="enhanceit.source" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -494,7 +371,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -507,19 +384,33 @@
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
+    <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="enhanceit.source.Main" />
       <module name="enhanceit" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="enhanceit.source.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="enhanceit.Main" />
+      <module name="enhanceit" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="enhanceit.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -544,7 +435,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
+    <configuration default="true" type="TestNG">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
@@ -555,15 +446,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
       <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
+      <predefined_log_file enabled="true" id="idea.log" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main (1)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -591,35 +487,22 @@
       <workItem from="1541615817902" duration="1093000" />
       <workItem from="1542206546916" duration="3034000" />
       <workItem from="1542220514683" duration="54000" />
-      <workItem from="1542543188821" duration="5460000" />
-      <workItem from="1542646952839" duration="3217000" />
-      <workItem from="1542693125231" duration="8000" />
-      <workItem from="1542706142718" duration="2083000" />
-      <workItem from="1542718266644" duration="14171000" />
-      <workItem from="1542745670165" duration="1268000" />
-      <workItem from="1542746963213" duration="1270000" />
-      <workItem from="1542875137917" duration="84000" />
-      <workItem from="1542909731845" duration="7522000" />
+      <workItem from="1542543188821" duration="5797000" />
+      <workItem from="1543153869522" duration="2000" />
+      <workItem from="1543153940284" duration="5000" />
+      <workItem from="1543154256462" duration="3639000" />
+      <workItem from="1543158705225" duration="3868000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75087000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="53315000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="26" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.20362474" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.19530416" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -627,9 +510,9 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.21908894" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.18546638" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.26898047" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.21908894" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18622175" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.26910657" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -638,12 +521,13 @@
       <window_info anchor="bottom" id="Problems" order="9" />
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" weight="0.329718" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.3286334" />
+      <window_info anchor="bottom" id="Event Log" order="12" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32831" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="15" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="15" />
+      <window_info anchor="bottom" id="Docker" order="16" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" sideWeight="0.49933422" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="JetGradle" order="3" />
       <window_info anchor="right" id="Database" order="4" />
@@ -652,24 +536,32 @@
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="Coverage" order="10" sideWeight="0.5006658" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="10" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/MarvinProject/MarvinPlugins/src/org/marvinproject/image/restoration/noiseReduction/NoiseReduction.java</url>
+          <line>115</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="mImage.getBufferedImage()" language="JAVA" />
-        <watch expression="sliderR.getValue()" language="JAVA" />
+        <watch expression="tooltip" language="kotlin" />
+        <watch expression="noiseButton" language="kotlin" />
       </configuration>
     </watches-manager>
   </component>
@@ -680,8 +572,13 @@
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
-        <expression-string>sliderR.getValue()</expression-string>
-        <language-id>JAVA</language-id>
+        <expression-string>noiseButton</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>tooltip</expression-string>
+        <language-id>kotlin</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
@@ -700,158 +597,151 @@
     <entry file="jar://$PROJECT_DIR$/../marvin/framework/marvin_1.5.5.jar!/marvin/image/MarvinImage.class" />
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.desktop/java/awt/image/BufferedImage.java" />
     <entry file="jar://$PROJECT_DIR$/../marvin/framework/marvin_1.5.5.jar!/marvin/io/MarvinImageIO.class" />
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java" />
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.base/javafx/event/Event.java" />
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.graphics/javafx/scene/Scene.java" />
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.base/javafx/event/EventHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/styles/menubutton.css" />
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.2/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java" />
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.2/lib/src.zip!/javafx.graphics/javafx/stage/Window.java" />
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.2/lib/src.zip!/javafx.base/javafx/beans/property/BooleanPropertyBase.java" />
-    <entry file="jar:///usr/lib/jvm/jdk-10.0.2/lib/src.zip!/javafx.base/javafx/beans/property/ReadOnlyBooleanWrapper.java" />
-    <entry file="file://$PROJECT_DIR$/MarvinProject/MarvinFramework/src/marvin/performance/MarvinPerformanceMeter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="186" selection-start-line="186" selection-end-line="186" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/topbar.css" />
-    <entry file="file://$PROJECT_DIR$/MarvinProject/MarvinPlugins/src/org/marvinproject/image/restoration/noiseReduction/NoiseReduction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="115" selection-start-line="115" selection-end-line="115" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/material-fx-v0_3.css" />
-    <entry file="file://$PROJECT_DIR$/src/styles/leftmenu.css" />
+    <entry file="file://$PROJECT_DIR$/src/styles/menubutton.css" />
     <entry file="file://$PROJECT_DIR$/src/styles/menu.css" />
-    <entry file="file://$PROJECT_DIR$/src/styles/button.css">
+    <entry file="file://$PROJECT_DIR$/src/enhanceit/mainstage.fxml" />
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.2/lib/src.zip!/javafx.graphics/javafx/stage/Window.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="33" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="33" />
+        <state relative-caret-position="209">
+          <caret line="672" selection-start-line="672" selection-end-line="672" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/slider.css">
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.2/lib/src.zip!/javafx.base/javafx/beans/property/BooleanPropertyBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        <state relative-caret-position="141">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.2/lib/src.zip!/javafx.base/javafx/beans/property/ReadOnlyBooleanWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MarvinProject/MarvinFramework/src/marvin/image/MarvinImage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="229" selection-start-line="229" selection-end-line="229" />
+        <state relative-caret-position="177">
+          <caret line="370" selection-start-line="370" selection-end-line="370" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/enhanceit/source/GUI.java" />
-    <entry file="file://$PROJECT_DIR$/MarvinProject/MarvinFramework/src/marvin/plugin/MarvinAbstractPlugin.java">
+    <entry file="file://$PROJECT_DIR$/src/enhanceit/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/enhanceit/Controller.java" />
+    <entry file="file://$PROJECT_DIR$/MarvinProject/MarvinFramework/src/marvin/performance/MarvinPerformanceMeter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="845">
+          <caret line="186" selection-start-line="186" selection-end-line="186" />
+          <folding>
+            <element signature="e#4180#4181#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MarvinProject/MarvinPlugins/src/org/marvinproject/image/restoration/noiseReduction/NoiseReduction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="94" column="47" selection-start-line="94" selection-start-column="47" selection-end-line="94" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MarvinProject/MarvinFramework/src/marvin/plugin/MarvinAbstractImagePlugin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="731">
           <caret line="77" selection-start-line="77" selection-end-line="77" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MarvinProject/MarvinPlugins/src/org/marvinproject/image/color/brightnessAndContrast/BrightnessAndContrast.java">
+    <entry file="jar:///usr/lib/jvm/jdk-10.0.2/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="78" column="65" lean-forward="true" selection-start-line="78" selection-start-column="55" selection-end-line="78" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.base/javafx/collections/FXCollections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="366" selection-start-line="366" selection-end-line="366" />
-          <folding>
-            <element signature="e#14202#14203#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.base/javafx/collections/MapChangeListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-          <folding>
-            <element signature="e#1171#1172#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="2539" selection-start-line="2539" selection-end-line="2539" />
-          <folding>
-            <element signature="e#72611#72619#0" expanded="true" />
-            <element signature="e#72678#72696#0" expanded="true" />
-            <element signature="e#84213#84214#0" expanded="true" />
-            <element signature="e#84253#84254#0" expanded="true" />
-            <element signature="e#84688#84689#0" expanded="true" />
-            <element signature="e#84730#84731#0" expanded="true" />
-            <element signature="e#87832#87833#0" expanded="true" />
-            <element signature="e#87884#87885#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/topbarbutton.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        <state relative-caret-position="217">
+          <caret line="2593" selection-start-line="2593" selection-end-line="2593" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/editbutton.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        <state relative-caret-position="272">
+          <caret line="52" column="1" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/enhanceit/source/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/enhanceit/source/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/topbarbutton.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="794">
+          <caret line="58" column="70" selection-start-line="58" selection-start-column="70" selection-end-line="58" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/enhanceit/source/ResizeHelper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="162" column="1" selection-start-line="162" selection-start-column="1" selection-end-line="162" selection-end-column="1" />
+          <folding>
+            <element signature="e#26#267#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/enhanceit/source/ResizeHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="88" column="15" selection-start-line="88" selection-start-column="15" selection-end-line="88" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2394#2395#0" expanded="true" />
+            <element signature="e#2436#2437#0" expanded="true" />
+            <element signature="e#2488#2489#0" expanded="true" />
+            <element signature="e#2536#2537#0" expanded="true" />
+            <element signature="e#2588#2589#0" expanded="true" />
+            <element signature="e#2636#2637#0" expanded="true" />
+            <element signature="e#2690#2691#0" expanded="true" />
+            <element signature="e#2740#2741#0" expanded="true" />
+            <element signature="e#2794#2795#0" expanded="true" />
+            <element signature="e#2844#2845#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/enhanceit/scenes/editor.fxml">
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="2090">
-          <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
-        </state>
-      </provider>
+      <provider editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/root.css">
+    <entry file="file://$PROJECT_DIR$/src/enhanceit/source/GUI.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/enhanceit/scenes/welcome.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="254" selection-start-line="9" selection-start-column="254" selection-end-line="9" selection-end-column="254" />
+        <state relative-caret-position="570">
+          <caret line="127" column="9" selection-start-line="127" selection-start-column="9" selection-end-line="127" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/enhanceit/source/EditorController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="174" column="73" lean-forward="true" selection-start-line="174" selection-start-column="73" selection-end-line="174" selection-end-column="73" />
+        <state relative-caret-position="333">
+          <caret line="104" column="17" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#initialize#0;class#EditorController#0" />
             <element signature="method#removeNoise#0;class#EditorController#0" />
-            <element signature="method#blackAndWhite#0;class#EditorController#0" />
             <element signature="method#colorFilter#0;class#EditorController#0" />
             <element signature="method#brightnessAndContrast#0;class#EditorController#0" />
             <element signature="method#updateDeltaR#0;class#EditorController#0" />
@@ -861,48 +751,31 @@
             <element signature="method#applyBC#0;class#EditorController#0" />
             <element signature="method#colorFilterBegin#0;class#EditorController#0" />
             <element signature="method#brightnessAndContrastBegin#0;class#EditorController#0" />
+            <element signature="method#save#0;class#EditorController#0" />
+            <element signature="e#5258#5259#0" expanded="true" />
+            <element signature="e#5285#5286#0" expanded="true" />
+            <element signature="e#5688#5689#0" expanded="true" />
+            <element signature="e#5718#5719#0" expanded="true" />
+            <element signature="e#5815#5816#0" expanded="true" />
+            <element signature="e#5845#5846#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/enhanceit/source/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/enhanceit/source/Delta.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="77" />
+        <state relative-caret-position="323">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#98#99#0" expanded="true" />
+            <element signature="e#122#123#0" expanded="true" />
+            <element signature="e#153#154#0" expanded="true" />
+            <element signature="e#179#180#0" expanded="true" />
+            <element signature="e#204#205#0" expanded="true" />
+            <element signature="e#228#229#0" expanded="true" />
+            <element signature="e#259#260#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/enhanceit/source/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/enhanceit/source/EditedImage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="39" column="70" selection-start-line="39" selection-start-column="70" selection-end-line="39" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#EditedImage#0;class#EditedImage#0" />
-            <element signature="method#getMarvinImage#0;class#EditedImage#0" />
-            <element signature="method#getBufferedImage#0;class#EditedImage#0" />
-            <element signature="method#initializeImage#0;class#EditedImage#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/enhanceit/source/GUI.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="75" column="52" lean-forward="true" selection-start-line="75" selection-start-column="52" selection-end-line="75" selection-end-column="52" />
         </state>
       </provider>
     </entry>

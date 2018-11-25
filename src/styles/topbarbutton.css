@@ -1,8 +1,60 @@
 .back {
     -fx-background-image: url(../images/back.png);
     -fx-background-position: center;
-    -fx-background-size: 30px 30px;
+    -fx-background-size: 30px;
     -fx-background-repeat: no-repeat;
     -fx-background-color: transparent;
-    -fx-background-radius: 0px;
+    -fx-background-radius: 50px;
+}
+
+.back:hover {
+    -fx-background-color: #222;
+}
+
+.close {
+    -fx-background-image: url(../images/buttons/close.png);
+    -fx-background-position: center;
+    -fx-background-size: 18px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+}
+
+.maximize {
+    -fx-background-image: url(../images/buttons/maximize.png);
+    -fx-background-position: center;
+    -fx-background-size: 18px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+}
+
+.minimize {
+    -fx-background-image: url(../images/buttons/minimize.png);
+    -fx-background-position: center;
+    -fx-background-size: 18px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+}
+
+.close:hover {
+    -fx-background-image: url(../images/buttons/close-hover.png);
+}
+
+.maximize:hover {
+    -fx-background-image: url(../images/buttons/maximize-hover.png);
+}
+
+.minimize:hover {
+    -fx-background-image: url(../images/buttons/minimize-hover.png);
+}
+
+.close:pressed {
+    -fx-background-image: url(../images/buttons/close-pressed.png);
+}
+
+.maximize:pressed {
+    -fx-background-image: url(../images/buttons/maximize-pressed.png);
+}
+
+.minimize:pressed {
+    -fx-background-image: url(../images/buttons/minimize-pressed.png);
 }

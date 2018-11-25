@@ -1,11 +1,14 @@
 package enhanceit.source;
 
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 import marvin.image.MarvinImage;
 import marvin.io.MarvinImageIO;
 import org.marvinproject.image.color.brightnessAndContrast.BrightnessAndContrast;
@@ -15,6 +18,8 @@ import java.io.File;
 
 
 public class EditorController {
+
+    Stage stage;
 
     @FXML
     ImageView imgView;
@@ -30,6 +35,9 @@ public class EditorController {
 
     @FXML
     Label brightnessLabel, contrastLabel;
+
+    @FXML
+    Button noiseButton, colorButton, bwButton, brightnessButton, autoButton, saveButton;
 
     private static int deltaR, deltaG, deltaB;
     private static MarvinImage edited;
@@ -47,10 +55,20 @@ public class EditorController {
         GUI.brightnessLabel = brightnessLabel;
         GUI.contrastLabel = contrastLabel;
         GUI.applyBrightnessButton = applyBrightnessButton;
+        GUI.noiseButton = noiseButton;
+        GUI.colorButton = colorButton;
+        GUI.bwButton = bwButton;
+        GUI.brightnessButton = brightnessButton;
+        GUI.autoButton = autoButton;
+        GUI.saveButton = saveButton;
+
 
         GUI.disableSlidersRGB();
         GUI.disableSlidersBC();
         GUI.setImage();
+        GUI.initializeTooltips();
+
+        stage = (Stage)autoButton.getScene().getWindow();
     }
 
     public void removeNoise() {
@@ -81,6 +99,19 @@ public class EditorController {
 
         EditedImage.setImage(edited);
         GUI.setImage();
+
+        ResizeHelper.addResizeListener((Stage)autoButton.getScene().getWindow());
+
+        final Delta dragDelta = new Delta();
+        stage.getScene().setOnMousePressed(mouseEvent -> {
+            dragDelta.setX(stage.getX() - mouseEvent.getScreenX());
+            dragDelta.setY(stage.getY() - mouseEvent.getScreenY());
+        });
+
+        stage.getScene().setOnMouseDragged(mouseEvent -> {
+            stage.setX(mouseEvent.getScreenX() + dragDelta.getX());
+            stage.setY(mouseEvent.getScreenY() + dragDelta.getY());
+        });
     }
 
     public void colorFilter() {
@@ -174,8 +205,20 @@ public class EditorController {
 
         fileChooser.getExtensionFilters().addAll(pngExt, jpgExt, bmpExt);
 
-        File file = fileChooser.showSaveDialog(applyRGBButton.getScene().getWindow());
+        File file = fileChooser.showSaveDialog(stage);
 
         MarvinImageIO.saveImage(EditedImage.getMarvinImage(), file.getPath());
+    }
+
+    public void close() {
+        GUI.close();
+    }
+
+    public void minimize() {
+        GUI.minimize(stage);
+    }
+
+    public void maximize() {
+        GUI.maximize(stage);
     }
 }

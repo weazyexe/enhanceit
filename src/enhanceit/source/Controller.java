@@ -48,9 +48,4 @@ public class Controller {
         }
     }
 
-    @FXML
-    public void closeApp() {
-        System.exit(0);
-    }
-
 }

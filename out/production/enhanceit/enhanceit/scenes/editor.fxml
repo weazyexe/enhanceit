@@ -10,41 +10,56 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="578.0" minWidth="709.0" prefHeight="636.0" prefWidth="709.0" styleClass="root" stylesheets="@../../styles/root.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="enhanceit.source.EditorController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="665.0" minWidth="942.0" prefHeight="665.0" prefWidth="942.0" styleClass="root" stylesheets="@../../styles/root.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="enhanceit.source.EditorController">
    <bottom>
       <HBox alignment="CENTER" prefHeight="70.0" prefWidth="679.0" BorderPane.alignment="CENTER">
          <children>
-            <Button alignment="BOTTOM_CENTER" minHeight="100.0" minWidth="120.0" mnemonicParsing="false" onMouseClicked="#removeNoise" prefHeight="100.0" prefWidth="120.0" styleClass="noise" stylesheets="@../../styles/editbutton.css" text="Remove noise" textAlignment="CENTER" textFill="WHITE">
+            <Button fx:id="noiseButton" alignment="BOTTOM_CENTER" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#removeNoise" prefHeight="100.0" prefWidth="100.0" styleClass="noise" stylesheets="@../../styles/editbutton.css" textAlignment="CENTER" textFill="WHITE">
                <HBox.margin>
-                  <Insets />
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </HBox.margin>
                <font>
                   <Font size="15.0" />
                </font></Button>
-            <Button alignment="BOTTOM_CENTER" minHeight="100.0" minWidth="120.0" mnemonicParsing="false" onMouseClicked="#colorFilterBegin" prefHeight="100.0" prefWidth="120.0" styleClass="color" stylesheets="@../../styles/editbutton.css" text="Colors" textAlignment="CENTER" textFill="WHITE">
+            <Button fx:id="colorButton" alignment="BOTTOM_CENTER" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#colorFilterBegin" prefHeight="100.0" prefWidth="100.0" styleClass="color" stylesheets="@../../styles/editbutton.css" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
             </Button>
-            <Button alignment="BOTTOM_CENTER" minHeight="100.0" minWidth="120.0" mnemonicParsing="false" onMouseClicked="#blackAndWhite" prefHeight="100.0" prefWidth="120.0" styleClass="bw" stylesheets="@../../styles/editbutton.css" text="Black &amp; white" textAlignment="CENTER" textFill="WHITE">
+            <Button fx:id="bwButton" alignment="BOTTOM_CENTER" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#blackAndWhite" prefHeight="100.0" prefWidth="100.0" styleClass="bw" stylesheets="@../../styles/editbutton.css" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
             </Button>
-            <Button alignment="BOTTOM_CENTER" minHeight="100.0" minWidth="120.0" mnemonicParsing="false" onMouseClicked="#brightnessAndContrastBegin" prefHeight="100.0" prefWidth="120.0" styleClass="brightness" stylesheets="@../../styles/editbutton.css" text="Brightness" textAlignment="CENTER" textFill="WHITE">
+            <Button fx:id="brightnessButton" alignment="BOTTOM_CENTER" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#brightnessAndContrastBegin" prefHeight="100.0" prefWidth="100.0" styleClass="brightness" stylesheets="@../../styles/editbutton.css" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
             </Button>
-            <Button alignment="BOTTOM_CENTER" minHeight="100.0" minWidth="120.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="120.0" styleClass="auto" stylesheets="@../../styles/editbutton.css" text="Auto" textAlignment="CENTER" textFill="WHITE">
+            <Button fx:id="autoButton" alignment="BOTTOM_CENTER" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" styleClass="auto" stylesheets="@../../styles/editbutton.css" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
             </Button>
-            <Button alignment="BOTTOM_CENTER" minHeight="100.0" minWidth="120.0" mnemonicParsing="false" onMouseClicked="#save" prefHeight="100.0" prefWidth="120.0" styleClass="save" stylesheets="@../../styles/editbutton.css" text="Save" textAlignment="CENTER" textFill="WHITE">
+            <Button fx:id="saveButton" alignment="BOTTOM_CENTER" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#save" prefHeight="100.0" prefWidth="100.0" styleClass="save" stylesheets="@../../styles/editbutton.css" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
             </Button>
          </children>
          <opaqueInsets>
@@ -52,9 +67,9 @@
          </opaqueInsets></HBox>
    </bottom>
    <center>
-      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+      <VBox alignment="TOP_CENTER" prefHeight="470.0" prefWidth="775.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fx:id="imgView" fitHeight="347.0" fitWidth="505.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgView" fitHeight="382.0" fitWidth="816.0" pickOnBounds="true" preserveRatio="true">
                <VBox.margin>
                   <Insets top="50.0" />
                </VBox.margin>
@@ -108,13 +123,37 @@
       </VBox>
    </center>
    <top>
-      <BorderPane prefHeight="35.0" prefWidth="709.0" BorderPane.alignment="CENTER">
+      <BorderPane prefHeight="47.0" prefWidth="942.0" BorderPane.alignment="CENTER">
          <left>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="31.0" styleClass="back" stylesheets="@../../styles/topbarbutton.css" BorderPane.alignment="CENTER">
+            <Button minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="back" stylesheets="@../../styles/topbarbutton.css" BorderPane.alignment="CENTER">
                <BorderPane.margin>
                   <Insets left="20.0" right="20.0" top="20.0" />
                </BorderPane.margin></Button>
          </left>
+         <right>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="70.0" prefWidth="134.0" BorderPane.alignment="CENTER_RIGHT">
+               <children>
+                  <Button fx:id="maximizeButton" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" onMouseClicked="#maximize" styleClass="maximize" stylesheets="@../../styles/topbarbutton.css">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="minimizeButton" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" onMouseClicked="#minimize" styleClass="minimize" stylesheets="@../../styles/topbarbutton.css">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="closeButton" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" onMouseClicked="#close" styleClass="close" stylesheets="@../../styles/topbarbutton.css">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </HBox>
+         </right>
       </BorderPane>
    </top>
 </BorderPane>
