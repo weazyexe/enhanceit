@@ -32,6 +32,10 @@ public class EditedImage {
         }
     }
 
+    public static synchronized void eraseImage() {
+        marvinImage = null;
+    }
+
     public static synchronized void setImage(MarvinImage mImage) {
         MarvinImage.copyColorArray(mImage, marvinImage);
     }

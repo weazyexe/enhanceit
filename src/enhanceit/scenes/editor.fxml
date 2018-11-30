@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="665.0" minWidth="942.0" prefHeight="665.0" prefWidth="942.0" styleClass="root" stylesheets="@../../styles/root.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="enhanceit.source.EditorController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="665.0" minWidth="942.0" prefHeight="665.0" prefWidth="942.0" styleClass="root" stylesheets="@../../styles/root.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="enhanceit.source.EditorController">
    <bottom>
       <HBox alignment="CENTER" prefHeight="70.0" prefWidth="679.0" BorderPane.alignment="CENTER">
          <children>
@@ -45,7 +45,7 @@
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </HBox.margin>
             </Button>
-            <Button fx:id="autoButton" alignment="BOTTOM_CENTER" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" styleClass="auto" stylesheets="@../../styles/editbutton.css" textAlignment="CENTER" textFill="WHITE">
+            <Button fx:id="autoButton" alignment="BOTTOM_CENTER" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#auto" prefHeight="100.0" prefWidth="100.0" styleClass="auto" stylesheets="@../../styles/editbutton.css" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
@@ -125,11 +125,18 @@
    <top>
       <BorderPane prefHeight="47.0" prefWidth="942.0" BorderPane.alignment="CENTER">
          <left>
-            <Button minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="back" stylesheets="@../../styles/topbarbutton.css" BorderPane.alignment="CENTER">
+            <Button minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#back" prefHeight="50.0" prefWidth="50.0" styleClass="back" stylesheets="@../../styles/topbarbutton.css" BorderPane.alignment="CENTER">
                <BorderPane.margin>
                   <Insets left="20.0" right="20.0" top="20.0" />
                </BorderPane.margin></Button>
          </left>
+         <right>
+            <Button minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="settings" stylesheets="@../../styles/topbarbutton.css" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </BorderPane.margin>
+            </Button>
+         </right>
       </BorderPane>
    </top>
 </BorderPane>

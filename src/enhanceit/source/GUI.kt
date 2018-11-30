@@ -90,6 +90,23 @@ class GUI {
         }
 
         @JvmStatic
+        fun showWelcomeScene(button: Button) {
+            val root = FXMLLoader.load<Parent>(javaClass.getResource("../scenes/welcome.fxml"))
+            val scene = Scene(root, 709.0, 496.0)
+
+            val stage = button.scene.window as Stage
+
+            stage.scene = scene
+            stage.minHeight = 496.0
+            stage.minWidth = 709.0
+            stage.maxHeight = Double.MAX_VALUE
+            stage.maxWidth = Double.MAX_VALUE
+
+            stage.height = 496.0
+            stage.width = 709.0
+        }
+
+        @JvmStatic
         fun initializeTooltips() {
             var tooltip = Tooltip("Remove the noise")
             noiseButton.tooltip = tooltip

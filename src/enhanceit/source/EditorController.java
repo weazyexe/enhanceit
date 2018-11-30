@@ -196,4 +196,15 @@ public class EditorController {
 
         MarvinImageIO.saveImage(EditedImage.getMarvinImage(), file.getPath());
     }
+
+    // TODO: do u rly want to back to main menu?
+    public void back() {
+        EditedImage.eraseImage();
+        GUI.showWelcomeScene(applyRGBButton);
+    }
+
+    // TODO: set auto
+    public void auto() {
+
+    }
 }
