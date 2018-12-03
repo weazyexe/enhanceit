@@ -1,0 +1,15 @@
+.toggle-button:focused {
+    -fx-background-color: -swatch-light-grey;
+}
+
+.toggle-button:focused:selected {
+    -fx-background-color: derive(-swatch-500, 50.0%),
+    derive(-swatch-500, -20.0%);
+    -fx-background-insets: 0.0, 0.2em;
+    -fx-text-fill: -fx-text-button-colored;
+}
+
+.toggle-button:armed, .toggle-button:selected {
+    -fx-background-color: -swatch-grey;
+    -fx-text-fill: -fx-text-button-colored;
+}

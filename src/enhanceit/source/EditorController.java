@@ -1,12 +1,10 @@
 package enhanceit.source;
 
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import marvin.image.MarvinImage;
@@ -19,6 +17,7 @@ import java.io.File;
 
 public class EditorController {
 
+    // TODO: dark/light themes
     Stage stage;
 
     @FXML
@@ -42,6 +41,7 @@ public class EditorController {
     private static int deltaR, deltaG, deltaB;
     private static MarvinImage edited;
     private static int deltaBrightness, deltaContrast;
+    private boolean isAuto = false;
 
     @FXML
     public void initialize() {
@@ -84,7 +84,7 @@ public class EditorController {
     }
 
     public void blackAndWhite() {
-        MarvinImage edited = EditedImage.getMarvinImage();
+        edited = EditedImage.copy();
 
         for (int y = 0; y < edited.getHeight(); y++) {
             for (int x = 0; x < edited.getWidth(); x++) {
@@ -131,8 +131,10 @@ public class EditorController {
     }
 
     public void brightnessAndContrast() {
-        deltaBrightness = (int)brightnessSlider.getValue();
-        deltaContrast = (int)contrastSlider.getValue();
+        if (!isAuto) {
+            deltaBrightness = (int) brightnessSlider.getValue();
+            deltaContrast = (int) contrastSlider.getValue();
+        }
 
         BrightnessAndContrast bac = new BrightnessAndContrast();
         edited = EditedImage.copy();
@@ -200,11 +202,57 @@ public class EditorController {
     // TODO: do u rly want to back to main menu?
     public void back() {
         EditedImage.eraseImage();
-        GUI.showWelcomeScene(applyRGBButton);
+        GUI.showWelcomeScene();
     }
 
     // TODO: set auto
     public void auto() {
+        isAuto = true;
+        getBrightness();
+        isAuto = false;
+    }
 
+    public void getBrightness() {
+
+        int dark = 0, light = 0;
+        edited = EditedImage.copy();
+
+        for (int y = 0; y < edited.getHeight(); y++) {
+            for (int x = 0; x < edited.getWidth(); x++) {
+                int r = edited.getIntComponent0(y, x);
+                int g = edited.getIntComponent1(y, x);
+                int b = edited.getIntComponent2(y, x);
+
+                int mid = (r + g + b) / 3;
+
+                if (mid >= 128) dark++;
+                else light++;
+            }
+        }
+
+        if (dark >= light) {
+            deltaBrightness += 10;
+            deltaContrast += 10;
+        }
+        else {
+            deltaBrightness -= 10;
+            deltaContrast -= 10;
+        }
+
+        brightnessAndContrast();
+
+        EditedImage.setImage(edited);
+
+        deltaR -= 4;
+        deltaG += 2;
+        deltaB += 3;
+
+        colorFilter();
+
+        EditedImage.setImage(edited);
+    }
+
+    public void settings() {
+        GUI.showSettings();
     }
 }

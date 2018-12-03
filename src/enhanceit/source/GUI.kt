@@ -90,11 +90,11 @@ class GUI {
         }
 
         @JvmStatic
-        fun showWelcomeScene(button: Button) {
+        fun showWelcomeScene() {
             val root = FXMLLoader.load<Parent>(javaClass.getResource("../scenes/welcome.fxml"))
             val scene = Scene(root, 709.0, 496.0)
 
-            val stage = button.scene.window as Stage
+            val stage = autoButton.scene.window as Stage
 
             stage.scene = scene
             stage.minHeight = 496.0
@@ -104,6 +104,22 @@ class GUI {
 
             stage.height = 496.0
             stage.width = 709.0
+        }
+
+        @JvmStatic
+        fun showSettings() {
+            val root = FXMLLoader.load<Parent>(javaClass.getResource("../scenes/settings.fxml"))
+            val scene = Scene(root, 228.0, 151.0)
+
+            val stage = Stage()
+
+            stage.scene = scene
+            stage.minHeight = 151.0
+            stage.minWidth = 228.0
+            stage.maxHeight = 151.0
+            stage.maxWidth = 228.0
+
+            stage.show()
         }
 
         @JvmStatic
