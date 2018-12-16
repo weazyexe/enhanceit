@@ -4,17 +4,17 @@ import javafx.embed.swing.SwingFXUtils
 import javafx.fxml.FXMLLoader
 import javafx.scene.Parent
 import javafx.scene.Scene
-import javafx.scene.control.Button
-import javafx.scene.control.Label
-import javafx.scene.control.Slider
-import javafx.scene.control.Tooltip
+import javafx.scene.control.*
 import javafx.scene.image.ImageView
+import javafx.stage.FileChooser
 import javafx.stage.Stage
 import marvin.image.MarvinImage
+import java.util.*
 
 
 class GUI {
     companion object {
+        lateinit var stage : Stage
         lateinit var sliderR : Slider
         lateinit var sliderG : Slider
         lateinit var sliderB : Slider
@@ -136,6 +136,25 @@ class GUI {
             autoButton.tooltip = tooltip
             tooltip = Tooltip("Save the image to...")
             saveButton.tooltip = tooltip
+        }
+
+        @JvmStatic
+        fun getFileChooser() : FileChooser {
+            val fileChooser = FileChooser()
+
+            val pngExt = FileChooser.ExtensionFilter("PNG pictures (*.png)", "*.png")
+            val jpgExt = FileChooser.ExtensionFilter("JPG/JPEG pictures (*.jpg)", "*.jpg", "*.jpeg")
+            val bmpExt = FileChooser.ExtensionFilter("BMP files (*.bmp)", "*.bmp")
+
+            fileChooser.extensionFilters.addAll(pngExt, jpgExt, bmpExt)
+
+            return fileChooser
+        }
+
+        @JvmStatic
+        fun checkAlert() : Optional<ButtonType> {
+            var alert = Alert(Alert.AlertType.CONFIRMATION, "Save the image?", ButtonType.YES, ButtonType.NO, ButtonType.CANCEL)
+            return alert.showAndWait()
         }
     }
 }

@@ -21,6 +21,8 @@ public class Main extends Application {
         primaryStage.setTitle("Enhance it");
         primaryStage.setScene(scene);
         primaryStage.show();
+
+        GUI.stage = primaryStage;
     }
 
 
