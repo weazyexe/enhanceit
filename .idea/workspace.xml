@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad60075d-b154-407c-9152-67a412d9d6f5" name="Default Changelist" comment="" />
+    <list default="true" id="ad60075d-b154-407c-9152-67a412d9d6f5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/Color.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/algorithms/Algorithms.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/controllers/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/controllers/SettingsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/exe/weazy/enhanceit/Color.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/exe/weazy/enhanceit/algorithms/Algorithms.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/exe/weazy/enhanceit/controllers/Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/exe/weazy/enhanceit/controllers/EditorController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/exe/weazy/enhanceit/controllers/SettingsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/enhanceit-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enhanceit.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/EditedImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/EditedImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/EditorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/controllers/EditorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/GUI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/GUI.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/SettingsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/editor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/editor.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/welcome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/welcome.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exe/weazy/enhanceit/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exe/weazy/enhanceit/EditedImage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/exe/weazy/enhanceit/EditedImage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exe/weazy/enhanceit/EditorController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exe/weazy/enhanceit/GUI$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/exe/weazy/enhanceit/GUI$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exe/weazy/enhanceit/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/exe/weazy/enhanceit/GUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exe/weazy/enhanceit/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/exe/weazy/enhanceit/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/exe/weazy/enhanceit/SettingsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/editor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/editor.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/welcome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/welcome.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/controllers/EditorController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
+            <state relative-caret-position="445">
+              <caret line="142" column="33" lean-forward="true" selection-start-line="142" selection-start-column="33" selection-end-line="142" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -57,6 +90,21 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-238">
               <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/algorithms/Algorithms.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#blackAndWhite#0;class#Algorithms#0" />
+                <element signature="method#colorFilter#0;class#Algorithms#0" />
+                <element signature="method#brightnessAndContrast#0;class#Algorithms#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,6 +125,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="weazy &lt;weazy.exe@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -226,7 +279,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544964866425" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544965069801" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -290,12 +343,27 @@
       <workItem from="1544788261003" duration="1010000" />
       <workItem from="1544956371052" duration="3073000" />
       <workItem from="1544959551882" duration="1684000" />
-      <workItem from="1544961687117" duration="3082000" />
+      <workItem from="1544961687117" duration="3380000" />
     </task>
+    <task id="LOCAL-00001" summary="update project settings">
+      <created>1544964931304</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1544964931304</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update project structure&#10;add alerts&#10;bug fixes">
+      <created>1544965069747</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1544965069747</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12670000" />
+    <option name="totallyTimeSpent" value="12968000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -308,9 +376,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="26" width="1920" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18676628" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18676628" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -325,11 +392,11 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32938644" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32938644" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32831" />
+      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.32831" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -353,6 +420,12 @@
         <option value="1" />
       </list>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update project settings" />
+    <MESSAGE value="rename event functions" />
+    <MESSAGE value="update project structure&#10;add alerts&#10;bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="update project structure&#10;add alerts&#10;bug fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -479,19 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/algorithms/Algorithms.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#blackAndWhite#0;class#Algorithms#0" />
-            <element signature="method#colorFilter#0;class#Algorithms#0" />
-            <element signature="method#brightnessAndContrast#0;class#Algorithms#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/settings.fxml">
       <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="JavaFX-Scene-Builder" />
@@ -592,8 +652,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/controllers/EditorController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
+        <state relative-caret-position="445">
+          <caret line="142" column="33" lean-forward="true" selection-start-line="142" selection-start-column="33" selection-end-line="142" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/algorithms/Algorithms.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#blackAndWhite#0;class#Algorithms#0" />
+            <element signature="method#colorFilter#0;class#Algorithms#0" />
+            <element signature="method#brightnessAndContrast#0;class#Algorithms#0" />
+          </folding>
         </state>
       </provider>
     </entry>
