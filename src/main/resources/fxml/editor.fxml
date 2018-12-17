@@ -130,13 +130,6 @@
                   <Insets left="20.0" right="20.0" top="20.0" />
                </BorderPane.margin></Button>
          </left>
-         <right>
-            <Button minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onMouseClicked="#settings" prefHeight="50.0" prefWidth="50.0" styleClass="settings" stylesheets="@../styles/topbarbutton.css" BorderPane.alignment="CENTER">
-               <BorderPane.margin>
-                  <Insets left="20.0" right="20.0" top="20.0" />
-               </BorderPane.margin>
-            </Button>
-         </right>
       </BorderPane>
    </top>
 </BorderPane>
