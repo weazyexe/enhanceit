@@ -19,7 +19,7 @@ public class Controller {
 
     @FXML
     public void openImage() {
-//        try {
+        try {
             fileChooser = GUI.getFileChooser();
 
             File file = fileChooser.showOpenDialog(loadImageButton.getScene().getWindow());
@@ -29,11 +29,11 @@ public class Controller {
 
             // show editor form
             GUI.showEditorScene(loadImageButton);
-//        }
-//        catch (Exception e) {
-            //Alert alert = new Alert(Alert.AlertType.ERROR, e.getClass().toString(), ButtonType.OK);
-            //alert.showAndWait();
-//        }
+        }
+        catch (Exception e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR, e.getClass().toString(), ButtonType.OK);
+            alert.showAndWait();
+        }
     }
 
 }

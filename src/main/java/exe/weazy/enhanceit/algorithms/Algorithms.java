@@ -46,7 +46,7 @@ public class Algorithms {
         bac.setAttribute("brightness", deltaBrightness);
         bac.setAttribute("contrast", deltaContrast);
 
-        bac.process(EditedImage.getMarvinImage(), image);
+        bac.process(image, image);
 
         return image;
     }
@@ -55,8 +55,24 @@ public class Algorithms {
         NoiseReduction noiseReduction = new NoiseReduction();
 
         noiseReduction.load();
-        noiseReduction.process(EditedImage.getMarvinImage(), image);
+        noiseReduction.process(image, image);
 
         return image;
+    }
+
+    public static boolean isDarkImage(MarvinImage image) {
+        int dark = 0, light = 0;
+        for (int y = 0; y < image.getHeight(); y++) {
+            for (int x = 0; x < image.getWidth(); x++) {
+                Color color = new Color(image.getIntComponent0(y, x), image.getIntComponent1(y, x), image.getIntComponent2(y, x));
+                int mid = (color.getR() + color.getG() + color.getB()) / 3;
+
+                if (mid >= 128) light++;
+                else dark++;
+            }
+        }
+
+        if (dark >= light) return true;
+        else return false;
     }
 }

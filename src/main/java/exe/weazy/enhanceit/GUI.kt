@@ -73,7 +73,7 @@ class GUI {
 
         @JvmStatic
         fun setImage(img : MarvinImage) {
-            imageView.image = SwingFXUtils.toFXImage(img.getBufferedImage(), null)
+            imageView.image = SwingFXUtils.toFXImage(img.bufferedImageNoAlpha, null)
         }
 
         @JvmStatic
@@ -104,22 +104,6 @@ class GUI {
 
             stage.height = 496.0
             stage.width = 709.0
-        }
-
-        @JvmStatic
-        fun showSettings() {
-            val root = FXMLLoader.load<Parent>(javaClass.getResource("/fxml/settings.fxml"))
-            val scene = Scene(root, 228.0, 151.0)
-
-            val stage = Stage()
-
-            stage.scene = scene
-            stage.minHeight = 151.0
-            stage.minWidth = 228.0
-            stage.maxHeight = 151.0
-            stage.maxWidth = 228.0
-
-            stage.show()
         }
 
         @JvmStatic

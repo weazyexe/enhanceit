@@ -3,7 +3,6 @@ package exe.weazy.enhanceit.controllers;
 import exe.weazy.enhanceit.EditedImage;
 import exe.weazy.enhanceit.GUI;
 import exe.weazy.enhanceit.algorithms.Algorithms;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
@@ -11,12 +10,10 @@ import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
 import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
-import javafx.stage.Stage;
 import marvin.image.MarvinImage;
 import marvin.io.MarvinImageIO;
 
 import java.io.File;
-import java.util.Optional;
 
 
 public class EditorController {
@@ -42,7 +39,7 @@ public class EditorController {
     private static int deltaR, deltaG, deltaB;
     private static MarvinImage edited;
     private static int deltaBrightness, deltaContrast;
-    private boolean isAuto = false, isColorFilter = false, isBrightnessAndContrast = false;
+    private boolean isColorFilter = false, isBrightnessAndContrast = false;
 
     @FXML
     public void initialize() {
@@ -87,18 +84,14 @@ public class EditorController {
     }
 
     public void colorFilterButtonClick() {
-        edited = Algorithms.colorFilter(EditedImage.copy(), deltaR, deltaG, deltaB);
+        edited = Algorithms.colorFilter(edited, deltaR, deltaG, deltaB);
 
         GUI.setImage(edited);
     }
 
     public void brightnessAndContrastButtonClick() {
-        if (!isAuto) {
-            deltaBrightness = (int) brightnessSlider.getValue();
-            deltaContrast = (int) contrastSlider.getValue();
-        }
+        edited = Algorithms.brightnessAndContrast(edited, deltaBrightness, deltaContrast);
 
-        edited = Algorithms.brightnessAndContrast(EditedImage.copy(), deltaBrightness, deltaContrast);
         GUI.setImage(edited);
     }
 
@@ -125,9 +118,7 @@ public class EditorController {
     }
 
     public void autoButtonClick() {
-        isAuto = true;
-        getBrightness();
-        isAuto = false;
+        autoEdit();
     }
 
 
@@ -177,25 +168,9 @@ public class EditorController {
     }
 
 
-    public void getBrightness() {
+    public void autoEdit() {
 
-        int dark = 0, light = 0;
-        edited = EditedImage.copy();
-
-        for (int y = 0; y < edited.getHeight(); y++) {
-            for (int x = 0; x < edited.getWidth(); x++) {
-                int r = edited.getIntComponent0(y, x);
-                int g = edited.getIntComponent1(y, x);
-                int b = edited.getIntComponent2(y, x);
-
-                int mid = (r + g + b) / 3;
-
-                if (mid >= 128) dark++;
-                else light++;
-            }
-        }
-
-        if (dark >= light) {
+        if (Algorithms.isDarkImage(EditedImage.getMarvinImage())) {
             deltaBrightness += 10;
             deltaContrast += 10;
         }
@@ -204,21 +179,20 @@ public class EditorController {
             deltaContrast -= 10;
         }
 
-        brightnessAndContrastButtonClick();
-
-        EditedImage.setImage(edited);
+        edited = Algorithms.brightnessAndContrast(EditedImage.copy(), deltaBrightness, deltaContrast);
 
         deltaR -= 4;
         deltaG += 2;
         deltaB += 3;
 
-        colorFilterButtonClick();
+        EditedImage.setImage(edited);
+
+        edited = EditedImage.copy();
+        edited = Algorithms.colorFilter(EditedImage.copy(), deltaR, deltaG, deltaB);
 
         EditedImage.setImage(edited);
-    }
 
-    public void settings() {
-        GUI.showSettings();
+        GUI.setImage(edited);
     }
 
     public void initializeCloseHandler() {
