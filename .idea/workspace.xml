@@ -29,52 +29,34 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/controllers/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="342">
+              <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/editor.fxml">
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
           <provider editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="114">
               <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
             </state>
           </provider>
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/controllers/EditorController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="119" column="35" selection-start-line="119" selection-start-column="35" selection-end-line="119" selection-end-column="35" />
+            <state relative-caret-position="508">
+              <caret line="181" lean-forward="true" selection-start-line="181" selection-end-line="181" />
               <folding>
-                <element signature="e#1206#2056#0" />
-                <element signature="e#3318#3319#0" expanded="true" />
-                <element signature="e#3666#3776#0" />
-                <element signature="e#3782#3892#0" />
-                <element signature="e#3898#4008#0" />
-                <element signature="e#4014#4146#0" />
-                <element signature="e#4152#4292#0" />
-                <element signature="e#4298#4497#0" />
-                <element signature="e#4503#4711#0" />
-                <element signature="e#4718#5359#0" />
-                <element signature="e#5429#5805#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/algorithms/Algorithms.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#isDarkImage#0;class#Algorithms#0" />
+                <element signature="e#1103#1953#0" />
+                <element signature="e#3350#3462#0" />
+                <element signature="e#3507#3652#0" />
+                <element signature="e#3328#3438#0" />
+                <element signature="e#3444#3554#0" />
+                <element signature="e#3560#3670#0" />
               </folding>
             </state>
           </provider>
@@ -83,19 +65,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/GUI.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="106" column="9" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+            <state relative-caret-position="363">
+              <caret line="94" column="49" selection-start-line="94" selection-start-column="49" selection-end-line="94" selection-end-column="49" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#!!block;n#disableSlidersRGB#0;n#!!block;n#Companion#0;n#!!block;n#GUI#0" />
+                <element signature="n#!!block;n#enableSlidersRGB#0;n#!!block;n#Companion#0;n#!!block;n#GUI#0" />
+                <element signature="n#!!block;n#disableSlidersBC#0;n#!!block;n#Companion#0;n#!!block;n#GUI#0" />
+                <element signature="n#!!block;n#enableSlidersBC#0;n#!!block;n#Companion#0;n#!!block;n#GUI#0" />
+                <element signature="n#!!block;n#setImage#0;n#!!block;n#Companion#0;n#!!block;n#GUI#0" />
+                <element signature="n#!!block;n#setImage#1;n#!!block;n#Companion#0;n#!!block;n#GUI#0" />
+                <element signature="n#!!block;n#initializeTooltips#0;n#!!block;n#Companion#0;n#!!block;n#GUI#0" />
+                <element signature="n#!!block;n#getFileChooser#0;n#!!block;n#Companion#0;n#!!block;n#GUI#0" />
               </folding>
             </state>
           </provider>
@@ -106,8 +86,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Singleton" />
         <option value="Class" />
+        <option value="Singleton" />
       </list>
     </option>
   </component>
@@ -140,15 +120,16 @@
         <option value="$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/welcome.fxml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/EditedImage.java" />
         <option value="$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/algorithms/Enhancer.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/editor.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/controllers/Controller.java" />
-        <option value="$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/algorithms/Algorithms.java" />
         <option value="$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/Color.java" />
-        <option value="$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/GUI.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/algorithms/Algorithms.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/editor.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/MImage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/EditedImage.java" />
         <option value="$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/controllers/EditorController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/GUI.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/controllers/Controller.java" />
       </list>
     </option>
   </component>
@@ -193,7 +174,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -265,17 +245,18 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545071970460" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545145119832" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -340,6 +321,7 @@
       <workItem from="1544980267228" duration="301000" />
       <workItem from="1544988082818" duration="75000" />
       <workItem from="1545067163777" duration="4680000" />
+      <workItem from="1545142211016" duration="2747000" />
     </task>
     <task id="LOCAL-00001" summary="update project settings">
       <created>1544964931304</created>
@@ -359,7 +341,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18541000" />
+    <option name="totallyTimeSpent" value="21288000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -371,9 +353,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="30" width="1920" height="1050" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19530416" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19722815" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -382,8 +365,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.26384366" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.1921824" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3984799" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19176598" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39761648" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
@@ -392,7 +375,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32790446" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32719395" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -431,12 +414,6 @@
           <line>13</line>
           <properties />
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/controllers/EditorController.java</url>
-          <line>86</line>
-          <properties />
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -528,59 +505,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/controllers/SettingsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/controllers/SettingsController.java" />
     <entry file="jar:///usr/lib/jvm/jdk-10.0.2/lib/src.zip!/javafx.graphics/javafx/stage/FileChooser.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/settings.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/welcome.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="158" selection-start-line="11" selection-start-column="158" selection-end-line="11" selection-end-column="158" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="jar:///usr/lib/jvm/jdk-10.0.2/lib/src.zip!/javafx.base/javafx/collections/FXCollections.java" />
     <entry file="jar:///usr/lib/jvm/jdk-10.0.2/lib/src.zip!/javafx.base/javafx/collections/MapChangeListener.java" />
     <entry file="jar:///usr/lib/jvm/jdk-10.0.2/lib/src.zip!/java.xml/jdk/xml/internal/SecuritySupport.java" />
     <entry file="jar:///usr/lib/jvm/jdk-10.0.2/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java" />
-    <entry file="jar://$USER_HOME$/Software/jdk-10.0.2/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java">
+    <entry file="jar://$USER_HOME$/Software/jdk-10.0.2/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.controls/javafx/scene/control/Slider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="1790" column="9" lean-forward="true" selection-start-line="1790" selection-start-column="9" selection-end-line="1790" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/EditedImage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="39" column="66" lean-forward="true" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="66" />
+        <state relative-caret-position="177">
+          <caret line="216" selection-start-line="216" selection-end-line="216" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#6415#6416#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/editor.fxml">
-      <provider editor-type-id="text-editor">
-        <state>
-          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/github/downgoon/MarvinFramework/1.5.5/MarvinFramework-1.5.5.jar!/marvin/image/MarvinImage.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="286" lean-forward="true" selection-start-line="276" selection-end-line="286" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/algorithms/Algorithms.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="185">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#isDarkImage#0;class#Algorithms#0" />
@@ -588,54 +552,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/controllers/EditorController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/MImage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="119" column="35" selection-start-line="119" selection-start-column="35" selection-end-line="119" selection-end-column="35" />
+        <state relative-caret-position="171">
+          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
           <folding>
-            <element signature="e#1206#2056#0" />
-            <element signature="e#3318#3319#0" expanded="true" />
-            <element signature="e#3666#3776#0" />
-            <element signature="e#3782#3892#0" />
-            <element signature="e#3898#4008#0" />
-            <element signature="e#4014#4146#0" />
-            <element signature="e#4152#4292#0" />
-            <element signature="e#4298#4497#0" />
-            <element signature="e#4503#4711#0" />
-            <element signature="e#4718#5359#0" />
-            <element signature="e#5429#5805#0" />
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/editor.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/Color.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="42" column="35" lean-forward="true" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+        <state relative-caret-position="114">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="method#editColor#0;class#Color#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/GUI.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/EditedImage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="106" column="9" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        <state relative-caret-position="232">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/controllers/EditorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="181" lean-forward="true" selection-start-line="181" selection-end-line="181" />
+          <folding>
+            <element signature="e#1103#1953#0" />
+            <element signature="e#3350#3462#0" />
+            <element signature="e#3507#3652#0" />
+            <element signature="e#3328#3438#0" />
+            <element signature="e#3444#3554#0" />
+            <element signature="e#3560#3670#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/GUI.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="94" column="49" selection-start-line="94" selection-start-column="49" selection-end-line="94" selection-end-column="49" />
+          <folding>
+            <element signature="n#!!block;n#disableSlidersRGB#0;n#!!block;n#Companion#0;n#!!block;n#GUI#0" />
+            <element signature="n#!!block;n#enableSlidersRGB#0;n#!!block;n#Companion#0;n#!!block;n#GUI#0" />
+            <element signature="n#!!block;n#disableSlidersBC#0;n#!!block;n#Companion#0;n#!!block;n#GUI#0" />
+            <element signature="n#!!block;n#enableSlidersBC#0;n#!!block;n#Companion#0;n#!!block;n#GUI#0" />
+            <element signature="n#!!block;n#setImage#0;n#!!block;n#Companion#0;n#!!block;n#GUI#0" />
+            <element signature="n#!!block;n#setImage#1;n#!!block;n#Companion#0;n#!!block;n#GUI#0" />
+            <element signature="n#!!block;n#initializeTooltips#0;n#!!block;n#Companion#0;n#!!block;n#GUI#0" />
+            <element signature="n#!!block;n#getFileChooser#0;n#!!block;n#Companion#0;n#!!block;n#GUI#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/exe/weazy/enhanceit/controllers/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="342">
+          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -704,7 +706,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>image</last-edited>
+          <last-edited>KotlinJavaRuntime</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

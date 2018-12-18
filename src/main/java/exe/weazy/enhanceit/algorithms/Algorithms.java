@@ -1,7 +1,6 @@
 package exe.weazy.enhanceit.algorithms;
 
 import exe.weazy.enhanceit.Color;
-import exe.weazy.enhanceit.EditedImage;
 import marvin.image.MarvinImage;
 import org.marvinproject.image.color.brightnessAndContrast.BrightnessAndContrast;
 import org.marvinproject.image.restoration.noiseReduction.NoiseReduction;
@@ -41,14 +40,15 @@ public class Algorithms {
 
     public static MarvinImage brightnessAndContrast(MarvinImage image, int deltaBrightness, int deltaContrast) {
         BrightnessAndContrast bac = new BrightnessAndContrast();
+        MarvinImage resultImage = new MarvinImage(image.getBufferedImageNoAlpha());
 
         bac.load();
         bac.setAttribute("brightness", deltaBrightness);
         bac.setAttribute("contrast", deltaContrast);
 
-        bac.process(image, image);
+        bac.process(image, resultImage);
 
-        return image;
+        return resultImage;
     }
 
     public static MarvinImage removeNoise(MarvinImage image) {

@@ -1,6 +1,5 @@
 package exe.weazy.enhanceit.controllers;
 
-import exe.weazy.enhanceit.EditedImage;
 import exe.weazy.enhanceit.GUI;
 import exe.weazy.enhanceit.algorithms.Algorithms;
 import javafx.fxml.FXML;
@@ -17,6 +16,8 @@ import java.io.File;
 
 
 public class EditorController {
+
+    public static MarvinImage image;
 
     @FXML
     ImageView imgView;
@@ -70,27 +71,27 @@ public class EditorController {
     }
 
     public void removeNoiseButtonClick() {
-        edited = Algorithms.removeNoise(EditedImage.copy());
+        edited = Algorithms.removeNoise(new MarvinImage(image.getBufferedImageNoAlpha()));
 
-        EditedImage.setImage(edited);
+        image = new MarvinImage(edited.getBufferedImageNoAlpha());
         GUI.setImage();
     }
 
     public void blackAndWhiteButtonClick() {
-        edited = Algorithms.blackAndWhite(EditedImage.copy());
+        edited = Algorithms.blackAndWhite(new MarvinImage(image.getBufferedImageNoAlpha()));
 
-        EditedImage.setImage(edited);
+        image = new MarvinImage(edited.getBufferedImageNoAlpha());
         GUI.setImage();
     }
 
-    public void colorFilterButtonClick() {
-        edited = Algorithms.colorFilter(edited, deltaR, deltaG, deltaB);
+    public void colorFilterSliderChange() {
+        edited = Algorithms.colorFilter(new MarvinImage(image.getBufferedImageNoAlpha()), deltaR, deltaG, deltaB);
 
         GUI.setImage(edited);
     }
 
-    public void brightnessAndContrastButtonClick() {
-        edited = Algorithms.brightnessAndContrast(edited, deltaBrightness, deltaContrast);
+    public void brightnessAndContrastSliderChange() {
+        edited = Algorithms.brightnessAndContrast(new MarvinImage(image.getBufferedImageNoAlpha()), deltaBrightness, deltaContrast);
 
         GUI.setImage(edited);
     }
@@ -100,7 +101,7 @@ public class EditorController {
 
         File file = fileChooser.showSaveDialog(GUI.stage);
 
-        MarvinImageIO.saveImage(EditedImage.getMarvinImage(), file.getPath());
+        MarvinImageIO.saveImage(image, file.getPath());
     }
 
     public void backButtonClick() {
@@ -108,11 +109,11 @@ public class EditorController {
 
         if (result.equals(ButtonType.YES)) {
             saveButtonClick();
-            EditedImage.eraseImage();
+            image = null;
             GUI.showWelcomeScene();
         }
         else if (result.equals(ButtonType.NO)) {
-            EditedImage.eraseImage();
+            image = null;
             GUI.showWelcomeScene();
         }
     }
@@ -122,31 +123,40 @@ public class EditorController {
     }
 
 
+    public void updateDeltaBrightness() {
+        deltaBrightness = (int)brightnessSlider.getValue();
+        brightnessAndContrastSliderChange();
+    }
 
+    public void updateDeltaContrast() {
+        deltaContrast = (int)contrastSlider.getValue();
+        brightnessAndContrastSliderChange();
+    }
 
     public void updateDeltaR() {
         deltaR = (int)sliderR.getValue();
-        colorFilterButtonClick();
+        colorFilterSliderChange();
     }
 
     public void updateDeltaG() {
         deltaG = (int)sliderG.getValue();
-        colorFilterButtonClick();
+        colorFilterSliderChange();
     }
 
     public void updateDeltaB() {
         deltaB = (int)sliderB.getValue();
-        colorFilterButtonClick();
+        colorFilterSliderChange();
     }
 
+
     public void applyRGB() {
-        EditedImage.setImage(edited);
+        image = new MarvinImage(edited.getBufferedImageNoAlpha());
         GUI.disableSlidersRGB();
         isColorFilter = false;
     }
 
     public void applyBC() {
-        EditedImage.setImage(edited);
+        image = new MarvinImage(edited.getBufferedImageNoAlpha());
         GUI.disableSlidersBC();
         isBrightnessAndContrast = false;
     }
@@ -154,7 +164,7 @@ public class EditorController {
     public void colorFilterBegin() {
         if (!isBrightnessAndContrast) {
             GUI.enableSlidersRGB();
-            edited = EditedImage.copy();
+            edited = new MarvinImage(image.getBufferedImageNoAlpha());
             isColorFilter = true;
         }
     }
@@ -162,15 +172,15 @@ public class EditorController {
     public void brightnessAndContrastBegin() {
         if (!isColorFilter) {
             GUI.enableSlidersBC();
-            edited = EditedImage.copy();
+            edited = new MarvinImage(image.getBufferedImageNoAlpha());
             isBrightnessAndContrast = true;
         }
     }
 
-
     public void autoEdit() {
+        edited = new MarvinImage(image.getBufferedImageNoAlpha());
 
-        if (Algorithms.isDarkImage(EditedImage.getMarvinImage())) {
+        if (Algorithms.isDarkImage(image)) {
             deltaBrightness += 10;
             deltaContrast += 10;
         }
@@ -179,18 +189,18 @@ public class EditorController {
             deltaContrast -= 10;
         }
 
-        edited = Algorithms.brightnessAndContrast(EditedImage.copy(), deltaBrightness, deltaContrast);
+        edited = Algorithms.brightnessAndContrast(edited, deltaBrightness, deltaContrast);
 
         deltaR -= 4;
         deltaG += 2;
         deltaB += 3;
 
-        EditedImage.setImage(edited);
+        image = new MarvinImage(edited.getBufferedImageNoAlpha());
 
-        edited = EditedImage.copy();
-        edited = Algorithms.colorFilter(EditedImage.copy(), deltaR, deltaG, deltaB);
+        edited = new MarvinImage(image.getBufferedImageNoAlpha());
+        edited = Algorithms.colorFilter(edited, deltaR, deltaG, deltaB);
 
-        EditedImage.setImage(edited);
+        image = new MarvinImage(edited.getBufferedImageNoAlpha());
 
         GUI.setImage(edited);
     }

@@ -1,5 +1,6 @@
 package exe.weazy.enhanceit
 
+import exe.weazy.enhanceit.controllers.EditorController
 import javafx.embed.swing.SwingFXUtils
 import javafx.fxml.FXMLLoader
 import javafx.scene.Parent
@@ -68,7 +69,7 @@ class GUI {
 
         @JvmStatic
         fun setImage() {
-            imageView.image = SwingFXUtils.toFXImage(EditedImage.getBufferedImage(), null)
+            imageView.image = SwingFXUtils.toFXImage(EditorController.image.bufferedImageNoAlpha, null)
         }
 
         @JvmStatic
@@ -77,11 +78,10 @@ class GUI {
         }
 
         @JvmStatic
-        fun showEditorScene(button: Button) {
+        fun showEditorScene() {
             val root = FXMLLoader.load<Parent>(javaClass.getResource("/fxml/editor.fxml"))
             val scene = Scene(root, 942.0, 700.0)
 
-            val stage = button.scene.window as Stage
             stage.scene = scene
             stage.minHeight = 700.0
             stage.minWidth = 942.0
@@ -93,8 +93,6 @@ class GUI {
         fun showWelcomeScene() {
             val root = FXMLLoader.load<Parent>(javaClass.getResource("/fxml/welcome.fxml"))
             val scene = Scene(root, 709.0, 496.0)
-
-            val stage = autoButton.scene.window as Stage
 
             stage.scene = scene
             stage.minHeight = 496.0
