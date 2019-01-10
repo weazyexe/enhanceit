@@ -44,6 +44,9 @@ public class EditorController {
 
     @FXML
     public void initialize() {
+        GUI.isWelcomeScene = false;
+        GUI.isEditorScene = true;
+
         GUI.sliderR = sliderR;
         GUI.sliderG = sliderG;
         GUI.sliderB = sliderB;
@@ -70,28 +73,15 @@ public class EditorController {
         initializeCloseHandler();
     }
 
+
     public void removeNoiseButtonClick() {
         edited = Algorithms.removeNoise(new MarvinImage(image.getBufferedImageNoAlpha()));
-
-        image = new MarvinImage(edited.getBufferedImageNoAlpha());
-        GUI.setImage();
-    }
-
-    public void blackAndWhiteButtonClick() {
-        edited = Algorithms.blackAndWhite(new MarvinImage(image.getBufferedImageNoAlpha()));
-
-        image = new MarvinImage(edited.getBufferedImageNoAlpha());
-        GUI.setImage();
-    }
-
-    public void colorFilterSliderChange() {
-        edited = Algorithms.colorFilter(new MarvinImage(image.getBufferedImageNoAlpha()), deltaR, deltaG, deltaB);
 
         GUI.setImage(edited);
     }
 
-    public void brightnessAndContrastSliderChange() {
-        edited = Algorithms.brightnessAndContrast(new MarvinImage(image.getBufferedImageNoAlpha()), deltaBrightness, deltaContrast);
+    public void blackAndWhiteButtonClick() {
+        edited = Algorithms.blackAndWhite(new MarvinImage(image.getBufferedImageNoAlpha()));
 
         GUI.setImage(edited);
     }
@@ -107,19 +97,60 @@ public class EditorController {
     public void backButtonClick() {
         var result = GUI.checkAlert();
 
-        if (result.equals(ButtonType.YES)) {
-            saveButtonClick();
-            image = null;
-            GUI.showWelcomeScene();
-        }
-        else if (result.equals(ButtonType.NO)) {
-            image = null;
-            GUI.showWelcomeScene();
+        if (result.isPresent()) {
+            if (result.get() == ButtonType.YES) {
+                saveButtonClick();
+                image = null;
+
+                GUI.isEditorScene = false;
+                GUI.isWelcomeScene = true;
+
+                GUI.showWelcomeScene();
+            }
+            else if (result.get() == ButtonType.NO) {
+                image = null;
+
+                GUI.isEditorScene = false;
+                GUI.isWelcomeScene = true;
+
+                GUI.showWelcomeScene();
+            }
         }
     }
 
     public void autoButtonClick() {
-        autoEdit();
+        edited = Algorithms.auto(new MarvinImage(image.getBufferedImageNoAlpha()));
+
+        GUI.setImage(edited);
+    }
+
+    public void colorFilterButtonClick() {
+        if (!isBrightnessAndContrast) {
+            GUI.enableSlidersRGB();
+            edited = new MarvinImage(image.getBufferedImageNoAlpha());
+            isColorFilter = true;
+        }
+    }
+
+    public void brightnessAndContrastButtonClick() {
+        if (!isColorFilter) {
+            GUI.enableSlidersBC();
+            edited = new MarvinImage(image.getBufferedImageNoAlpha());
+            isBrightnessAndContrast = true;
+        }
+    }
+
+
+    public void colorFilterSliderChange() {
+        edited = Algorithms.colorFilter(new MarvinImage(image.getBufferedImageNoAlpha()), deltaR, deltaG, deltaB);
+
+        GUI.setImage(edited);
+    }
+
+    public void brightnessAndContrastSliderChange() {
+        edited = Algorithms.brightnessAndContrast(new MarvinImage(image.getBufferedImageNoAlpha()), deltaBrightness, deltaContrast);
+
+        GUI.setImage(edited);
     }
 
 
@@ -132,6 +163,7 @@ public class EditorController {
         deltaContrast = (int)contrastSlider.getValue();
         brightnessAndContrastSliderChange();
     }
+
 
     public void updateDeltaR() {
         deltaR = (int)sliderR.getValue();
@@ -161,60 +193,21 @@ public class EditorController {
         isBrightnessAndContrast = false;
     }
 
-    public void colorFilterBegin() {
-        if (!isBrightnessAndContrast) {
-            GUI.enableSlidersRGB();
-            edited = new MarvinImage(image.getBufferedImageNoAlpha());
-            isColorFilter = true;
-        }
-    }
-
-    public void brightnessAndContrastBegin() {
-        if (!isColorFilter) {
-            GUI.enableSlidersBC();
-            edited = new MarvinImage(image.getBufferedImageNoAlpha());
-            isBrightnessAndContrast = true;
-        }
-    }
-
-    public void autoEdit() {
-        edited = new MarvinImage(image.getBufferedImageNoAlpha());
-
-        if (Algorithms.isDarkImage(image)) {
-            deltaBrightness += 10;
-            deltaContrast += 10;
-        }
-        else {
-            deltaBrightness -= 10;
-            deltaContrast -= 10;
-        }
-
-        edited = Algorithms.brightnessAndContrast(edited, deltaBrightness, deltaContrast);
-
-        deltaR -= 4;
-        deltaG += 2;
-        deltaB += 3;
-
-        image = new MarvinImage(edited.getBufferedImageNoAlpha());
-
-        edited = new MarvinImage(image.getBufferedImageNoAlpha());
-        edited = Algorithms.colorFilter(edited, deltaR, deltaG, deltaB);
-
-        image = new MarvinImage(edited.getBufferedImageNoAlpha());
-
-        GUI.setImage(edited);
-    }
 
     public void initializeCloseHandler() {
         GUI.stage.setOnCloseRequest(event -> {
             var result = GUI.checkAlert();
 
-            if (result.equals(ButtonType.YES)) {
-                saveButtonClick();
-                System.exit(0);
-            }
-            else if (result.equals(ButtonType.NO)) {
-                System.exit(0);
+            if (result.isPresent() && GUI.isEditorScene) {
+                if (result.get() == ButtonType.YES) {
+                    saveButtonClick();
+                    System.exit(0);
+                } else if (result.get() == ButtonType.NO) {
+                    System.exit(0);
+                }
+                else {
+                    event.consume();
+                }
             }
         });
     }

@@ -33,6 +33,11 @@ class GUI {
         lateinit var autoButton: Button
         lateinit var saveButton: Button
 
+        @JvmField
+        var isWelcomeScene : Boolean = false
+        @JvmField
+        var isEditorScene : Boolean = false
+
         @JvmStatic
         fun disableSlidersRGB() {
             sliderR.isVisible = false

@@ -60,7 +60,30 @@ public class Algorithms {
         return image;
     }
 
-    public static boolean isDarkImage(MarvinImage image) {
+    public static MarvinImage auto(MarvinImage image) {
+        int deltaBrightness, deltaContrast;
+
+        if (isDarkImage(image)) {
+            deltaBrightness = 10;
+            deltaContrast = 10;
+        }
+        else {
+            deltaBrightness = -10;
+            deltaContrast = -10;
+        }
+
+        image = Algorithms.brightnessAndContrast(image, deltaBrightness, deltaContrast);
+
+        int deltaR = -4;
+        int deltaG = 2;
+        int deltaB = 3;
+
+        image = Algorithms.colorFilter(new MarvinImage(image.getBufferedImageNoAlpha()), deltaR, deltaG, deltaB);
+
+        return image;
+    }
+
+    private static boolean isDarkImage(MarvinImage image) {
         int dark = 0, light = 0;
         for (int y = 0; y < image.getHeight(); y++) {
             for (int x = 0; x < image.getWidth(); x++) {
